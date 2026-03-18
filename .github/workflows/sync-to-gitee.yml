@@ -14,10 +14,9 @@ jobs:
         with:
           fetch-depth: 0  # 获取完整历史用于同步
       
-      - name: Sync to Gitee
-        uses: pixta-dev/repository-mirroring-action@v1
-        with:
-          target_repo_url:
-            https://gitee.com/ad7007/taiji-api.git
-          ssh_private_key:
-            ${{ secrets.GITEE_SSH_PRIVATE_KEY }}
+      - name: Sync to Gitee (using token)
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote add gitee https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_TOKEN }}@gitee.com/${{ secrets.GITEE_USERNAME }}/taiji-api.git
+          git push --force gitee main
