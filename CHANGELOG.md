@@ -7,16 +7,75 @@
 
 ---
 
-## [未发布]
+## [2.0.0] - 2026-03-18 ✅ 已发布
 
-### Added
-- 社区共同维护模式文档
+### ✨ Added
+
+#### L4 规则层
+- **5 宫指挥官** - 感知→决策→调配→闭环完整流程
+- **7 宫 TDD 验收** - 红灯确认→标准定义→绿灯检查
+- 任务自动优先级排序
+- 宫位动态调配规则
+
+#### 3 宫模型分配
+- **Zero Token 模式** - 零成本调用主流 AI 模型
+- 支持 Claude/DeepSeek/GPT/Gemini/Qwen
+- 自动成本优化
+- 优先级驱动分配
+
+#### 1 宫数据采集
+- **Crawlee 集成** - 智能数据抓取
+- **双模式切换** - HTTP 快速 + 浏览器渲染
+- **防封禁特性** - IP 轮换、鼠标模拟、UA 轮换
+- 代理池支持
+
+#### 定时备份
+- 中午 12 点 + 晚上 23 点自动备份
+- Rclone 云端存储支持
+- 本地 + 云端双重备份
+
+#### 社区治理
+- 社区共同维护模式
+- 创始人权限保留
 - 维护者招募计划
-- 5 分钟快速开始贡献指南
+- 中英双语文档
 
-### Changed
-- README 更新为社区共同维护理念
-- CONTRIBUTING 增加维护者申请流程
+### 🔧 Changed
+- 九宫格负载自动调节
+- 阴阳平衡检测优化
+- API 响应性能提升
+
+### 📚 Documentation
+- README.md / README.en.md - 完整项目说明
+- CONTRIBUTING.md / CONTRIBUTING.en.md - 贡献指南
+- GOVERNANCE.md / GOVERNANCE.en.md - 社区治理模式
+- FOUNDER_STATEMENT.md / FOUNDER_STATEMENT.en.md - 创始人声明
+- ROADMAP.md / ROADMAP_V2.1.md - 项目路线图
+- ABOUT.en.md - 项目详细介绍
+- CHANGELOG.md - 版本更新日志
+- CODE_OF_CONDUCT.md - 行为准则
+- SECURITY.md - 安全策略
+- docs/API_EXAMPLES.md - API 使用示例
+- docs/INTERNATIONALIZATION.md - 国际化指南
+- MAINTAINERS_WANTED.md - 维护者招募
+- QUICK_START_CONTRIBUTE.md - 快速开始指南
+
+### 🏛️ Community
+- MIT 许可证
+- Issue/PR 模板
+- 行为准则
+- 社区共同维护模式
+- 创始人权限保留
+
+### 🚀 Deployment
+- Dockerfile
+- docker-compose.yml
+- requirements.txt (完整依赖)
+- .gitignore
+
+---
+
+## [未发布]
 
 ---
 
