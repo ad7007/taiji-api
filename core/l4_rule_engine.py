@@ -170,7 +170,26 @@ class L4RuleEngine:
             TDDStandard("版本信息", True, "必须记录版本号"),
             TDDStandard("依赖检查", True, "必须检查并安装依赖"),
             TDDStandard("功能验证", True, "必须执行基本功能测试"),
-        ]
+        ],
+        # 🆕 新增验收模板
+        "content_create": [
+            TDDStandard("主题明确", True, "内容围绕明确主题"),
+            TDDStandard("结构完整", True, "有开头、正文、结尾"),
+            TDDStandard("语言流畅", True, "无明显语法错误"),
+            TDDStandard("有价值", True, "提供有用信息或观点"),
+        ],
+        "code_review": [
+            TDDStandard("代码规范", True, "符合 PEP 8 等规范"),
+            TDDStandard("注释完整", True, "关键代码有注释"),
+            TDDStandard("测试覆盖", True, "有单元测试覆盖"),
+            TDDStandard("无安全漏洞", True, "通过安全检查"),
+        ],
+        "api_integration": [
+            TDDStandard("接口可用", True, "API 正常响应"),
+            TDDStandard("错误处理", True, "有完善的错误处理"),
+            TDDStandard("文档完整", True, "有 API 文档"),
+            TDDStandard("性能达标", True, "响应时间<100ms"),
+        ],
     }
     
     # 优先级关键词规则

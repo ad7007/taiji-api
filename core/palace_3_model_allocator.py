@@ -161,6 +161,35 @@ class Palace3ModelAllocator:
             speed_level=4,
             quality_level=4
         ),
+        
+        # 🆕 本地模型支持（Ollama）
+        "ollama/llama3": ModelCapability(
+            provider=ModelProvider.OLLAMA,
+            model_name="llama3",
+            access_mode=AccessMode.LOCAL,  # 本地运行
+            strengths=["通用", "快速", "隐私"],
+            cost_level=0,  # 免费
+            speed_level=5,
+            quality_level=4
+        ),
+        "ollama/mistral": ModelCapability(
+            provider=ModelProvider.OLLAMA,
+            model_name="mistral",
+            access_mode=AccessMode.LOCAL,
+            strengths=["代码", "推理"],
+            cost_level=0,
+            speed_level=5,
+            quality_level=4
+        ),
+        "ollama/qwen": ModelCapability(
+            provider=ModelProvider.OLLAMA,
+            model_name="qwen",
+            access_mode=AccessMode.LOCAL,
+            strengths=["中文", "通用"],
+            cost_level=0,
+            speed_level=5,
+            quality_level=4
+        ),
     }
     
     # 任务类型 → 推荐模型

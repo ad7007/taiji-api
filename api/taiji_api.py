@@ -513,6 +513,32 @@ async def palace1_report():
         logger.error(f"Palace 1 report failed: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/health", response_model=Dict[str, Any])
+async def health_check():
+    """健康检查端点"""
+    return {
+        "status": "healthy",
+        "timestamp": datetime.now().isoformat(),
+        "version": "2.0.0"
+    }
+
+@app.get("/api/monitor/status", response_model=Dict[str, Any])
+async def monitor_status():
+    """6 宫监控 - 系统状态监控"""
+    import psutil
+    import os
+    
+    process = psutil.Process(os.getpid())
+    
+    return {
+        "cpu_percent": psutil.cpu_percent(),
+        "memory_percent": process.memory_percent(),
+        "memory_info_mb": process.memory_info().rss / 1024 / 1024,
+        "disk_usage_percent": psutil.disk_usage('/').percent,
+        "uptime_hours": (datetime.now() - datetime.fromtimestamp(process.create_time())).total_seconds() / 3600,
+        "active_tasks": len([t for t in _l4_engine.tasks.values() if t.status.value != "delivered"]) if _l4_engine else 0
+    }
+
 @app.get("/api/taiji/balance", response_model=Dict[str, Any])
 async def get_balance_status():
     """获取阴阳平衡状态"""
