@@ -7,7 +7,7 @@
 | Platform | URL | Status |
 |----------|-----|--------|
 | **GitHub (Main)** | https://github.com/ad7007/taiji-api | ✅ Main Repository |
-| **Gitee (Mirror)** | https://gitee.com/ad7007/taiji-api | 🔄 Auto-Sync |
+| **Gitee (Mirror)** | https://gitee.com/miroeta/taiji-api | ✅ Synced |
 
 ---
 

@@ -9,7 +9,7 @@
 | 平台 / Platform | 地址 / URL | 状态 / Status |
 |----------------|-----------|---------------|
 | **GitHub (主仓库)** | https://github.com/ad7007/taiji-api | ✅ 主仓库 / Main |
-| **Gitee (镜像)** | https://gitee.com/ad7007/taiji-api | 🔄 自动同步 / Auto-sync |
+| **Gitee (镜像)** | https://gitee.com/miroeta/taiji-api | ✅ 已同步 / Synced |
 
 ---
 
