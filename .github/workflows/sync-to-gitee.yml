@@ -1,0 +1,23 @@
+name: Sync to Gitee Mirror
+
+on:
+  push:
+    branches: [main, develop]
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 获取完整历史用于同步
+      
+      - name: Sync to Gitee
+        uses: pixta-dev/repository-mirroring-action@v1
+        with:
+          target_repo_url:
+            https://gitee.com/ad7007/taiji-api.git
+          ssh_private_key:
+            ${{ secrets.GITEE_SSH_PRIVATE_KEY }}

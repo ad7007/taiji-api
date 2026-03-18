@@ -294,6 +294,18 @@ MIT License - See [LICENSE](LICENSE) file for details.
 ---
 
 **Languages**: 
-- [中文](README.md) | [English](README.en.md)
+- [中文](README.md)
+- [English](README.en.md)
+
+## 🪞 Mirror Repository
+
+- **GitHub (Main)**: https://github.com/ad7007/taiji-api
+- **Gitee (China Mirror)**: https://gitee.com/ad7007/taiji-api
+
+**Chinese Users**: Use Gitee mirror for faster access in China.
+
+See: [GITEE_MIRROR.md](GITEE_MIRROR.md)
+
+---
 
 **Last Updated**: 2026-03-18

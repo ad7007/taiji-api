@@ -299,3 +299,13 @@ MIT License - 详见 [LICENSE](LICENSE)
 
 - **中文**: [README.md](README.md)
 - **English**: [README.en.md](README.en.md)
+
+## 🪞 镜像仓库 / Mirror Repository
+
+- **GitHub (主仓库)**: https://github.com/ad7007/taiji-api
+- **Gitee (中国镜像)**: https://gitee.com/ad7007/taiji-api
+
+**国内用户**: 可使用 Gitee 镜像获得更快的访问速度。
+**Chinese Users**: Use Gitee mirror for faster access in China.
+
+详见 / See: [GITEE_MIRROR.md](GITEE_MIRROR.md)
