@@ -438,17 +438,73 @@ async def palace3_compare(task_type: str):
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/palace3/cost-report", response_model=Dict[str, Any])
-async def palace3_cost_report():
+async def palace3_cost_report(days: int = 7):
     """
     3 宫 - 成本报告
     
-    返回 Zero Token 节省统计
+    返回 Zero Token 节省统计和成本分析
     """
     try:
         from core.palace_3_model_allocator import palace3_get_cost_report
-        return palace3_get_cost_report()
+        return palace3_get_cost_report(days)
     except Exception as e:
         logger.error(f"Palace 3 cost report failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/palace3/optimization-tips", response_model=Dict[str, Any])
+async def palace3_optimization_tips():
+    """
+    3 宫 - 成本优化建议
+    
+    根据当前使用情况提供优化建议
+    """
+    try:
+        from core.palace_3_model_allocator import get_palace3_allocator
+        allocator = get_palace3_allocator()
+        report = allocator.get_cost_report()
+        
+        tips = []
+        
+        # 根据使用率给建议
+        if report["this_week"]["zero_token_ratio"] < 0.8:
+            tips.append({
+                "priority": "high",
+                "tip": "Zero Token 使用率低于 80%，建议优先使用免费模型",
+                "action": "设置 PREFER_ZERO_TOKEN=True"
+            })
+        
+        if report["this_week"]["local_model_tasks"] == 0:
+            tips.append({
+                "priority": "medium",
+                "tip": "未使用本地模型，建议安装 Ollama",
+                "action": "curl -fsSL https://ollama.com/install.sh | sh"
+            })
+        
+        if report["this_month"]["total_cost"] > 5.0:
+            tips.append({
+                "priority": "high",
+                "tip": "本月成本超过 5 元，建议设置预算限制",
+                "action": "配置 MONTHLY_BUDGET=10.0"
+            })
+        
+        if not tips:
+            tips.append({
+                "priority": "info",
+                "tip": "成本优化良好，继续保持！",
+                "action": "无需操作"
+            })
+        
+        return {
+            "current_status": {
+                "zero_token_ratio": report["this_week"]["zero_token_ratio"],
+                "local_model_ratio": report["this_week"]["local_model_tasks"] / report["this_week"]["total_tasks"] if report["this_week"]["total_tasks"] > 0 else 0,
+                "monthly_cost": report["this_month"]["total_cost"]
+            },
+            "optimization_tips": tips,
+            "potential_savings": report["savings"]["vs_all_api_token"]
+        }
+    except Exception as e:
+        logger.error(f"Palace 3 optimization tips failed: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 # ========== 1 宫数据采集端点 ==========

@@ -401,22 +401,74 @@ class Palace3ModelAllocator:
             "timestamp": datetime.now().isoformat()
         })
     
-    def get_cost_report(self) -> Dict[str, Any]:
+    def get_cost_report(self, days: int = 7) -> Dict[str, Any]:
         """生成成本报告"""
-        if not self.allocation_history:
-            return {"message": "暂无分配记录"}
+        from datetime import datetime, timedelta
         
-        total_cost = sum(a["estimated_cost"] for a in self.allocation_history)
-        zero_token_count = sum(1 for a in self.allocation_history if a["access_mode"] == "zero_token")
-        api_token_count = len(self.allocation_history) - zero_token_count
+        if not self.allocation_history:
+            return {
+                "today": {"total_tasks": 0, "total_cost": 0.0},
+                "this_week": {"total_tasks": 0, "total_cost": 0.0},
+                "this_month": {"total_tasks": 0, "total_cost": 0.0},
+                "savings": {"vs_all_api_token": 0.0, "optimization_rate": 1.0}
+            }
+        
+        now = datetime.now()
+        today_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
+        week_start = now - timedelta(days=now.weekday())
+        month_start = now.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+        
+        today_tasks = []
+        week_tasks = []
+        month_tasks = []
+        
+        for allocation in self.allocation_history:
+            task_time = datetime.fromisoformat(allocation["timestamp"])
+            
+            if task_time >= today_start:
+                today_tasks.append(allocation)
+            if task_time >= week_start:
+                week_tasks.append(allocation)
+            if task_time >= month_start:
+                month_tasks.append(allocation)
+        
+        def calc_stats(tasks):
+            total = len(tasks)
+            zero_token = sum(1 for t in tasks if t["access_mode"] == "zero_token")
+            local = sum(1 for t in tasks if t["access_mode"] == "local")
+            api_token = total - zero_token - local
+            cost = sum(t["estimated_cost"] for t in tasks)
+            return {
+                "total_tasks": total,
+                "zero_token_tasks": zero_token,
+                "local_model_tasks": local,
+                "api_token_tasks": api_token,
+                "zero_token_ratio": zero_token / total if total > 0 else 0,
+                "total_cost": round(cost, 4)
+            }
+        
+        today_stats = calc_stats(today_tasks)
+        week_stats = calc_stats(week_tasks)
+        month_stats = calc_stats(month_tasks)
+        
+        # 计算节省
+        avg_api_cost = 0.004  # 平均每次任务 0.004 元
+        total_if_all_api = (today_stats["total_tasks"] + week_stats["total_tasks"] + month_stats["total_tasks"]) * avg_api_cost
+        actual_cost = today_stats["total_cost"] + week_stats["total_cost"] + month_stats["total_cost"]
         
         return {
-            "total_tasks": len(self.allocation_history),
-            "zero_token_tasks": zero_token_count,
-            "api_token_tasks": api_token_count,
-            "total_estimated_cost": total_cost,
-            "savings": api_token_count * 0.004 - total_cost,  # 假设 API Token 平均 0.004 元/千 token
-            "zero_token_ratio": zero_token_count / len(self.allocation_history) if self.allocation_history else 0
+            "today": today_stats,
+            "this_week": week_stats,
+            "this_month": month_stats,
+            "savings": {
+                "vs_all_api_token": round(total_if_all_api - actual_cost, 4),
+                "optimization_rate": round(1 - (actual_cost / total_if_all_api) if total_if_all_api > 0 else 1.0, 4)
+            },
+            "budget": {
+                "monthly_limit": 10.0,
+                "remaining": round(10.0 - month_stats["total_cost"], 4),
+                "status": "healthy" if month_stats["total_cost"] < 5.0 else "warning"
+            }
         }
 
 
