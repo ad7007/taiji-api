@@ -178,7 +178,10 @@ FEISHU_APP_SECRET="xxxxxxxxxxxxxxxxx"
 
 ## 🤝 社区共同维护
 
-> **这个项目需要你的参与！**
+> **社区共同所有 + 创始人保留最高权限**
+>
+> 项目采用社区共同维护模式，同时创始人保留最高管理权限和最终决策权。
+> 详见 [创始人声明](FOUNDER_STATEMENT.md) 和 [治理模式](GOVERNANCE.md)。
 
 ### 如何参与
 
