@@ -13,7 +13,7 @@
 
 > **⚠️ Community Co-Maintenance Project** - Everyone is welcome to contribute and improve Taiji API together!
 
-Taiji API is a nine-palace philosophy-based task management system that combines traditional Chinese wisdom with modern AI technology.
+**Taiji (太极九宫) Task Management System** is a revolutionary open-source governance framework that maps three real-world institutions into an Eastern philosophy-inspired architecture, creating a sustainable, evolvable, and verifiable operating system for open-source projects.
 
 > "Taiji generates Liangyi, Liangyi generates Sixiang, Sixiang generates Bagua" - I Ching
 
