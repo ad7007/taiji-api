@@ -33,12 +33,14 @@ class ModelProvider(Enum):
     GEMINI = "gemini"
     QWEN = "qwen"
     ZHIPU = "zhipu"
+    OLLAMA = "ollama"  # 本地模型
 
 
 class AccessMode(Enum):
     """访问模式"""
     API_TOKEN = "api_token"      # 传统 API 调用（付费）
     ZERO_TOKEN = "zero_token"    # 浏览器自动化（免费）
+    LOCAL = "local"              # 本地模型（免费）
 
 
 class TaskComplexity(Enum):
