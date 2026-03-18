@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  taiji-api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backups:/app/backups
+      - ./logs:/app/logs
+    environment:
+      - PREFER_ZERO_TOKEN=true
+      - RCLONE_CONFIG=gdrive
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # 可选：添加 Redis 缓存
+  # redis:
+  #   image: redis:7-alpine
+  #   ports:
+  #     - "6379:6379"
+  #   volumes:
+  #     - redis_data:/data
+  #   restart: unless-stopped
+
+# volumes:
+#   redis_data:
