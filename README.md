@@ -290,3 +290,10 @@ MIT License - 详见 [LICENSE](LICENSE)
 ---
 
 **🌟 如果这个项目对你有帮助，请给一个 Star！**
+
+---
+
+## 🌍 多语言支持 / Multi-language Support
+
+- **中文**: [README.md](README.md)
+- **English**: [README.en.md](README.en.md)
