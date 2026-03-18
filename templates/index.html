@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang= zh-CN>
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content=width=device-width initial-scale=1.0>
+    <title>太极系统管理界面</title>
+    <!-- Tailwind CSS -->
+    <script src=https://cdn.tailwindcss.com></script>
+    <!-- Chart.js -->
+    <script src=https://cdn.jsdelivr.net/npm/chart.js></script>
+    <style>
+        /* 自定义样式 */
+        .mode-indicator {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        .mode-yang {
+            background-color: #FF6B6B;
+            box-shadow: 0 0 10px #FF6B6B;
+        }
+        
+        .mode-yin {
+            background-color: #4ECDC4;
+            box-shadow: 0 0 10px #4ECDC4;
+        }
+        
+        .palace-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .palace-item {
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .palace-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .palace-item h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .palace-item .load {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .element {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            margin: 0 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .element.wood {
+            background-color: #4CAF50;
+        }
+        
+        .element.fire {
+            background-color: #FF5722;
+        }
+        
+        .element.earth {
+            background-color: #FFC107;
+        }
+        
+        .element.metal {
+            background-color: #9E9E9E;
+        }
+        
+        .element.water {
+            background-color: #2196F3;
+        }
+        
+        .element.active {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .status-pill {
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .status-running {
+            background-color: #10B981;
+            color: white;
+        }
+        
+        .status-success {
+            background-color: #3B82F6;
+            color: white;
+        }
+        
+        .status-error {
+            background-color: #EF4444;
+            color: white;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background-color: #e5e7eb;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body class=bg-gray-50 min-h-screen>
+    <!-- 顶部导航 -->
+    <header class=bg-white shadow-sm>
+        <div class=container mx-auto px-4 py-4 flex justify-between items-center>
+            <div class=flex items-center space-x-2>
+                <div class=w-10 h-10 rounded-full bg-gradient-to-br from-red-500 to-blue-500 flex items-center justify-center>
+                    <span class=text-white font-bold text-xl>太</span>
+                </div>
+                <h1 class=text-xl font-bold text-gray-800>太极系统管理界面</h1>
+            </div>
+            <div class=flex items-center space-x-4>
+                <span id=system-status class=text-sm font-medium text-green-600 flex items-center>
+                    <span class=w-2 h-2 bg-green-500 rounded-full mr-2></span>
+                    运行中
+                </span>
+                <button id=refresh-btn class=px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-md text-sm transition-colors>
+                    刷新
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class=container mx-auto px-4 py-6>
+        <!-- 系统概览 -->
+        <section class=grid grid-cols-1 md:grid-cols-3 gap-6 mb-6>
+            <!-- 太极模式 -->
+            <div class=bg-white rounded-lg shadow p-4>
+                <h2 class=text-lg font-semibold text-gray-800 mb-4>太极模式</h2>
+                <div class=flex items-center justify-between>
+                    <h3 id=taiji-mode class=text-xl font-bold>阳 - 正转</h3>
+                    <div id=mode-indicator class=mode-indicator mode-yang></div>
+                </div>
+            </div>
+
+            <!-- 四象阶段 -->
+            <div class=bg-white rounded-lg shadow p-4>
+                <h2 class=text-lg font-semibold text-gray-800 mb-4>四象阶段</h2>
+                <div class=flex items-center justify-between>
+                    <h3 id=symbols-stage class=text-xl font-bold>少阳</h3>
+                    <span class=text-sm text-gray-500>当前阶段</span>
+                </div>
+            </div>
+
+            <!-- 阴阳平衡 -->
+            <div class=bg-white rounded-lg shadow p-4>
+                <h2 class=text-lg font-semibold text-gray-800 mb-4>阴阳平衡</h2>
+                <div class=flex items-center justify-between>
+                    <h3 id=balance-status class=text-xl font-bold>平衡</h3>
+                    <span id=task-count class=text-sm text-gray-500>任务数: 0</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 九宫格状态 -->
+        <section class=bg-white rounded-lg shadow p-4 mb-6>
+            <h2 class=text-lg font-semibold text-gray-800 mb-4>九宫格状态</h2>
+            <div class=palace-grid>
+                <div id=palace-1 class=palace-item border-gray-200 bg-gray-50>
+                    <h3>1宫</h3>
+                    <div class=load id=palace-1-load>0%</div>
+                </div>
+                <div id=palace-2 class=palace-item border-gray-200 bg-gray-50>
+                    <h3>2宫</h3>
+                    <div class=load id=palace-2-load>0%</div>
+                </div>
+                <div id=palace-3 class=palace-item border-gray-200 bg-gray-50>
+                    <h3>3宫</h3>
+                    <div class=load id=palace-3-load>0%</div>
+                </div>
+                <div id=palace-4 class=palace-item border-gray-200 bg-gray-50>
+                    <h3>4宫</h3>
+                    <div class=load id=palace-4-load>0%</div>
+                </div>
+                <div id=palace-5 class=palace-item border-primary bg-primary/10>
+                    <h3>5宫</h3>
+                    <div class=load id=palace-5-load>0%</div>
+                </div>
+                <div id=palace-6 class=palace-item border-gray-200 bg-gray-50>
+                    <h3>6宫</h3>
+                    <div class=load id=palace-6-load>0%</div>
+                </div>
+                <div id=palace-7 class=palace-item border-gray-200 bg-gray-50>
+                    <h3>7宫</h3>
+                    <div class=load id=palace-7-load>0%</div>
+                </div>
+                <div id=palace-8 class=palace-item border-gray-200 bg-gray-50>
+                    <h3>8宫</h3>
+                    <div class=load id=palace-8-load>0%</div>
+                </div>
+                <div id=palace-9 class=palace-item border-gray-200 bg-gray-50>
+                    <h3>9宫</h3>
+                    <div class=load id=palace-9-load>0%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 五行循环和系统监控 -->
+        <section class=grid grid-cols-1 md:grid-cols-2 gap-6 mb-6>
+            <!-- 五行循环 -->
+            <div class=bg-white rounded-lg shadow p-4>
+                <h2 class=text-lg font-semibold text-gray-800 mb-4>五行循环</h2>
+                <div class=flex justify-center mb-4>
+                    <div id=element-wood class=element wood active>木</div>
+                    <div id=element-fire class=element fire>火</div>
+                    <div id=element-earth class=element earth>土</div>
+                    <div id=element-metal class=element metal>金</div>
+                    <div id=element-water class=element water>水</div>
+                </div>
+                <div class=text-center>
+                    <p id=current-element class=text-lg font-medium>当前元素: 木</p>
+                </div>
+            </div>
+
+            <!-- 系统监控 -->
+            <div class=bg-white rounded-lg shadow p-4>
+                <h2 class=text-lg font-semibold text-gray-800 mb-4>系统监控</h2>
+                <div class=space-y-4>
+                    <div>
+                        <div class=flex justify-between text-sm mb-1>
+                            <span>CPU 使用率</span>
+                            <span id=cpu-usage>0%</span>
+                        </div>
+                        <div class=progress-bar>
+                            <div id=cpu-bar class=progress-fill bg-blue-500 style=width: 0%></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class=flex justify-between text-sm mb-1>
+                            <span>内存使用率</span>
+                            <span id=memory-usage>0%</span>
+                        </div>
+                        <div class=progress-bar>
+                            <div id=memory-bar class=progress-fill bg-purple-500 style=width: 0%></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class=flex justify-between text-sm mb-1>
+                            <span>磁盘使用率</span>
+                            <span id=disk-usage>0%</span>
+                        </div>
+                        <div class=progress-bar>
+                            <div id=disk-bar class=progress-fill bg-green-500 style=width: 0%></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 系统图表 -->
+                <div class=mt-4>
+                    <h3 class=text-sm font-medium text-gray-600 mb-2>系统性能趋势</h3>
+                    <div class=h-64>
+                        <canvas id=system-chart></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 任务管理 -->
+        <section class=bg-white rounded-lg shadow p-4 mb-6>
+            <h2 class=text-lg font-semibold text-gray-800 mb-4>任务管理</h2>
+            <div class=space-y-3 max-h-80 overflow-y-auto>
+                <div id=task-list>
+                    <!-- 任务将通过JavaScript动态添加 -->
+                    <div class=text-center text-gray-500 py-8>
+                        暂无任务
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API 状态和操作 -->
+        <section class=bg-white rounded-lg shadow p-4 mb-6>
+            <h2 class=text-lg font-semibold text-gray-800 mb-4>API 状态和操作</h2>
+            <div class=grid grid-cols-1 md:grid-cols-2 gap-4>
+                <!-- API 状态 -->
+                <div>
+                    <h3 class=text-sm font-medium text-gray-600 mb-2>API 端点状态</h3>
+                    <div class=space-y-2>
+                        <div class=flex items-center justify-between p-2 bg-gray-50 rounded>
+                            <span class=text-sm>/api/state</span>
+                            <span class=status-pill status-running>可用</span>
+                        </div>
+                        <div class=flex items-center justify-between p-2 bg-gray-50 rounded>
+                            <span class=text-sm>/api/taiji/status</span>
+                            <span class=status-pill status-running>可用</span>
+                        </div>
+                        <div class=flex items-center justify-between p-2 bg-gray-50 rounded>
+                            <span class=text-sm>/api/taiji/palaces</span>
+                            <span class=status-pill status-running>可用</span>
+                        </div>
+                        <div class=flex items-center justify-between p-2 bg-gray-50 rounded>
+                            <span class=text-sm>/api/taiji/balance</span>
+                            <span class=status-pill status-running>可用</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 操作按钮 -->
+                <div>
+                    <h3 class=text-sm font-medium text-gray-600 mb-2>系统操作</h3>
+                    <div class=grid grid-cols-2 gap-2>
+                        <button id=switch-mode-btn class=px-4 py-2 bg-blue-500 text-white rounded-md text-sm hover:bg-blue-600 transition-colors>
+                            切换模式
+                        </button>
+                        <button id=advance-symbols-btn class=px-4 py-2 bg-purple-500 text-white rounded-md text-sm hover:bg-purple-600 transition-colors>
+                            推进四象
+                        </button>
+                        <button id=adjust-balance-btn class=px-4 py-2 bg-green-500 text-white rounded-md text-sm hover:bg-green-600 transition-colors>
+                            调整平衡
+                        </button>
+                        <button id=reset-engine-btn class=px-4 py-2 bg-yellow-500 text-white rounded-md text-sm hover:bg-yellow-600 transition-colors>
+                            重置引擎
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部信息 -->
+    <footer class=bg-white border-t border-gray-200 py-4>
+        <div class=container mx-auto px-4 text-center text-sm text-gray-600>
+            <p>太极系统管理界面 &copy; 2026</p>
+            <p class=mt-1>API 版本: 1.0.0 | 最后更新: <span id=last-update>2026-03-14</span></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 系统状态数据
+        let systemData = {
+            mode: 'yang',
+            symbolsStage: '少阳',
+            balance: '平衡',
+            taskCount: 0,
+            palaces: {
+                1: { load: 0.9 },
+                2: { load: 0.2 },
+                3: { load: 0.25 },
+                4: { load: 0.25 },
+                5: { load: 0.85 },
+                6: { load: 0.86 },
+                7: { load: 0.86 },
+                8: { load: 0.86 },
+                9: { load: 0.86 }
+            },
+            currentElement: '木',
+            cpuUsage: 0,
+            memoryUsage: 0,
+            diskUsage: 0,
+            tasks: []
+        };
+
+        // 系统监控图表
+        let systemChart;
+
+        // 初始化图表
+        function initChart() {
+            const ctx = document.getElementById('system-chart').getContext('2d');
+            systemChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: Array(30).fill(''),
+                    datasets: [
+                        {
+                            label: 'CPU 使用率',
+                            data: Array(30).fill(0),
+                            borderColor: '#165DFF',
+                            backgroundColor: 'rgba(22, 93, 255, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        },
+                        {
+                            label: '内存使用率',
+                            data: Array(30).fill(0),
+                            borderColor: '#7B61FF',
+                            backgroundColor: 'rgba(123, 97, 255, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        },
+                        {
+                            label: '磁盘使用率',
+                            data: Array(30).fill(0),
+                            borderColor: '#00B42A',
+                            backgroundColor: 'rgba(0, 180, 42, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            title: {
+                                display: true,
+                                text: '使用率 (%)'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        }
+                    }
+                }
+            });
+        }
+
+        // 更新系统状态
+        function updateSystemStatus() {
+            // 更新太极模式
+            document.getElementById('taiji-mode').textContent = systemData.mode === 'yang' ? '阳 - 正转' : '阴 - 反转';
+            document.getElementById('mode-indicator').className = systemData.mode === 'yang' ? 'mode-indicator mode-yang' : 'mode-indicator mode-yin';
+
+            // 更新四象阶段
+            document.getElementById('symbols-stage').textContent = systemData.symbolsStage;
+
+            // 更新阴阳平衡
+            document.getElementById('balance-status').textContent = systemData.balance;
+
+            // 更新任务计数
+            document.getElementById('task-count').textContent = 任务数: ;
+
+            // 更新宫位状态
+            for (let i = 1; i <= 9; i++) {
+                const load = systemData.palaces[i].load;
+                document.getElementById(palace--load).textContent = ${Math.round(load * 100)}%;
+
+                const palaceElement = document.getElementById(palace-);
+                if (load > 0.7) {
+                    palaceElement.className = 'palace-item border-red-500 bg-red-50';
+                } else if (load > 0.3) {
+                    palaceElement.className = 'palace-item border-yellow-500 bg-yellow-50';
+                } else {
+                    palaceElement.className = i === 5 ? 'palace-item border-blue-500 bg-blue-50' : 'palace-item border-gray-200 bg-gray-50';
+                }
+            }
+
+            // 更新五行循环
+            const elements = ['wood', 'fire', 'earth', 'metal', 'water'];
+            elements.forEach(element => {
+                const elementElement = document.getElementById(element-);
+                if (element === systemData.currentElement.toLowerCase()) {
+                    elementElement.className = element  active;
+                } else {
+                    elementElement.className = element ;
+                }
+            });
+            document.getElementById('current-element').textContent = 当前元素: ;
+
+            // 更新系统监控
+            document.getElementById('cpu-usage').textContent = ${Math.round(systemData.cpuUsage)}%;
+            document.getElementById('cpu-bar').style.width = ${systemData.cpuUsage}%;
+
+            document.getElementById('memory-usage').textContent = ${Math.round(systemData.memoryUsage)}%;
+            document.getElementById('memory-bar').style.width = ${systemData.memoryUsage}%;
+
+            document.getElementById('disk-usage').textContent = ${Math.round(systemData.diskUsage)}%;
+            document.getElementById('disk-bar').style.width = ${systemData.diskUsage}%;
+
+            // 更新图表数据
+            if (systemChart) {
+                systemChart.data.datasets[0].data.push(systemData.cpuUsage);
+                systemChart.data.datasets[1].data.push(systemData.memoryUsage);
+                systemChart.data.datasets[2].data.push(systemData.diskUsage);
+
+                // 保持数据点数量为30
+                systemChart.data.datasets[0].data.shift();
+                systemChart.data.datasets[1].data.shift();
+                systemChart.data.datasets[2].data.shift();
+
+                systemChart.update();
+            }
+
+            // 更新任务列表
+            updateTaskList();
+
+            // 更新最后更新时间
+            const now = new Date();
+            const formattedDate = ${now.getFullYear()}-- ::;
+            document.getElementById('last-update').textContent = formattedDate;
+        }
+
+        // 更新任务列表
+        function updateTaskList() {
+            const taskListElement = document.getElementById('task-list');
+
+            if (systemData.tasks.length === 0) {
+                taskListElement.innerHTML = 
+                    <div class=text-center text-gray-500 py-8>
+                        暂无任务
+                    </div>
+                ;
+                return;
+            }
+
+            let taskHtml = '';
+            systemData.tasks.forEach(task => {
+                taskHtml += 
+                    <div class=p-3 bg-gray-50 rounded border-l-4 >
+                        <div class=flex justify-between items-start>
+                            <div>
+                                <h4 class=font-medium text-sm></h4>
+                                <p class=text-xs text-gray-500 mt-1></p>
+                            </div>
+                            <span class=status-pill >
+                                
+                            </span>
+                        </div>
+                        <div class=mt-2 text-xs text-gray-500>
+                            开始时间: 
+                        </div>
+                    </div>
+                ;
+            });
+
+            taskListElement.innerHTML = taskHtml;
+        }
+
+        // 模拟获取系统数据
+        function fetchSystemData() {
+            // 模拟API调用
+            return fetch('/api/state')
+                .then(response => response.json())
+                .then(data => {
+                    // 更新系统状态
+                    // 这里可以根据实际API响应更新系统数据
+                    
+                    // 模拟宫位数据
+                    for (let i = 1; i <= 9; i++) {
+                        systemData.palaces[i].load = Math.random();
+                    }
+
+                    // 模拟五行循环
+                    const elements = ['木', '火', '土', '金', '水'];
+                    systemData.currentElement = elements[Math.floor(Math.random() * elements.length)];
+
+                    // 模拟系统监控数据
+                    systemData.cpuUsage = Math.random() * 100;
+                    systemData.memoryUsage = Math.random() * 100;
+                    systemData.diskUsage = Math.random() * 100;
+
+                    // 模拟任务数据
+                    if (Math.random() > 0.7) {
+                        systemData.tasks.push({
+                            name: 任务 ,
+                            description: '执行太极系统操作',
+                            status: 'running',
+                            startTime: new Date().toLocaleString()
+                        });
+                        systemData.taskCount++;
+                    }
+
+                    // 限制任务数量
+                    if (systemData.tasks.length > 5) {
+                        systemData.tasks.shift();
+                    }
+
+                    return systemData;
+                })
+                .catch(error => {
+                    console.error('Error fetching system data:', error);
+                    // 使用模拟数据
+                    return systemData;
+                });
+        }
+
+        // 切换太极模式
+        function switchTaijiMode() {
+            const newMode = systemData.mode === 'yang' ? 'yin' : 'yang';
+            systemData.mode = newMode;
+            updateSystemStatus();
+            alert('模式切换成功');
+        }
+
+        // 推进四象阶段
+        function advanceSymbols() {
+            // 更新四象阶段
+            const stages = ['少阳', '太阳', '少阴', '太阴'];
+            const currentIndex = stages.indexOf(systemData.symbolsStage);
+            systemData.symbolsStage = stages[(currentIndex + 1) % stages.length];
+            updateSystemStatus();
+            alert('四象阶段推进成功');
+        }
+
+        // 调整阴阳平衡
+        function adjustBalance() {
+            systemData.balance = '平衡';
+            updateSystemStatus();
+            alert('阴阳平衡调整成功');
+        }
+
+        // 重置引擎
+        function resetEngine() {
+            if (confirm('确定要重置太极引擎吗？这将清除所有状态。')) {
+                // 重置系统数据
+                systemData = {
+                    mode: 'yang',
+                    symbolsStage: '少阳',
+                    balance: '平衡',
+                    taskCount: 0,
+                    palaces: {
+                        1: { load: 0 },
+                        2: { load: 0 },
+                        3: { load: 0 },
+                        4: { load: 0 },
+                        5: { load: 0 },
+                        6: { load: 0 },
+                        7: { load: 0 },
+                        8: { load: 0 },
+                        9: { load: 0 }
+                    },
+                    currentElement: '木',
+                    cpuUsage: 0,
+                    memoryUsage: 0,
+                    diskUsage: 0,
+                    tasks: []
+                };
+                updateSystemStatus();
+                alert('太极引擎重置成功');
+            }
+        }
+
+        // 初始化
+        function init() {
+            // 初始化图表
+            initChart();
+
+            // 初始更新
+            updateSystemStatus();
+
+            // 定时更新
+            setInterval(() => {
+                fetchSystemData().then(() => {
+                    updateSystemStatus();
+                });
+            }, 5000);
+
+            // 绑定事件
+            document.getElementById('refresh-btn').addEventListener('click', () => {
+                fetchSystemData().then(() => {
+                    updateSystemStatus();
+                });
+            });
+
+            document.getElementById('switch-mode-btn').addEventListener('click', switchTaijiMode);
+            document.getElementById('advance-symbols-btn').addEventListener('click', advanceSymbols);
+            document.getElementById('adjust-balance-btn').addEventListener('click', adjustBalance);
+            document.getElementById('reset-engine-btn').addEventListener('click', resetEngine);
+        }
+
+        // 页面加载完成后初始化
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
