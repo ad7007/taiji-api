@@ -1,0 +1,16 @@
+{
+  "signals": [
+    {
+      "source": "metric",
+      "palace_id": 1,
+      "yao_level": 1,
+      "signal_type": "latency",
+      "value": 150.0,
+      "unit": "ms",
+      "detected_state": "阳",
+      "detected_keyword": "正常",
+      "timestamp": "2026-03-20T16:14:27.680820"
+    }
+  ],
+  "last_update": "2026-03-20T16:14:27.680826"
+}

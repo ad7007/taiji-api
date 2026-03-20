@@ -5,7 +5,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-green.svg)](https://openclaw.ai)
-[![Community Driven](https://img.shields.io/badge/community-driven-blue.svg)](https://github.com/ad7007/taiji-api)
+
+> **💰 商业服务**: 专业版 ¥99/月 | 企业版 ¥999/月 | [查看详情](./docs/pricing-page.md)
 
 ---
 

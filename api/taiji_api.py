@@ -100,6 +100,18 @@ app.include_router(consciousness_router)
 from .task_routes import router as task_router
 app.include_router(task_router)
 
+# 导入并添加六爻感知路由
+from .hexagram_routes import router as hexagram_router
+app.include_router(hexagram_router)
+
+# 导入并添加外部智能体接入路由
+from core.external_agent_api import router as external_agent_router
+app.include_router(external_agent_router)
+
+# 导入并添加信号采集路由
+from .signal_collector import router as signal_collector_router
+app.include_router(signal_collector_router)
+
 # 挂载静态文件和模板
 app.mount("/static", StaticFiles(directory=static_dir), name="static")
 templates = Jinja2Templates(directory=templates_dir)
