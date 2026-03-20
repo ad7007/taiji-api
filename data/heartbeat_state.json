@@ -1,9 +1,7 @@
 {
-  "last_heartbeat": "2026-03-20T16:57:49.674349",
-  "total_heartbeats": 1,
+  "last_heartbeat": "2026-03-20T17:24:19.492117",
+  "total_heartbeats": 3,
   "actions_taken": [
-    "任务检查失败: 'v1' is not a valid TaskStatus",
-    "系统偏阳(1.00)，可以正转创造",
-    "1个智能体空闲可分配任务"
+    "系统偏阳(1.00)，可以正转创造"
   ]
 }
