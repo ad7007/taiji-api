@@ -86,6 +86,19 @@ class AutoEvolutionDaemon:
             except:
                 pass
         
+        # 空闲检测：为空闲宫位生成自完善任务
+        new_self_tasks = {}
+        try:
+            from idle_detector import heartbeat_ensure_alive
+            new_self_tasks = heartbeat_ensure_alive()
+            if new_self_tasks.get("new_tasks"):
+                result["actions"].append({
+                    "type": "self_improvement",
+                    "palaces": list(new_self_tasks["new_tasks"].keys()),
+                })
+        except:
+            pass
+        
         # 记录日志
         log_entry = {
             "timestamp": datetime.now().isoformat(),
@@ -95,6 +108,7 @@ class AutoEvolutionDaemon:
             "actions": len(result["actions"]),
             "executed_tasks": executed,
             "pending_tasks": state.get("pending_tasks", 0),
+            "new_self_tasks": len(new_self_tasks.get("new_tasks", {})),
         }
         
         with open(self.log_file, "a") as f:
