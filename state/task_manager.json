@@ -1,7 +1,7 @@
 {
-  "task_counter": 123,
+  "task_counter": 134,
   "created_time": "2026-03-20T08:24:48.199768",
-  "saved_time": "2026-03-20T11:43:08.775365",
+  "saved_time": "2026-03-20T11:44:50.412004",
   "queues": {
     "1": {
       "palace_name": "数据采集",
@@ -278,6 +278,15 @@
           "result": null
         },
         {
+          "task_id": "task_0130",
+          "title": "【反向营销】设计'推荐返佣'自动化系统",
+          "status": "pending",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T11:44:50.411919",
+          "result": null
+        },
+        {
           "task_id": "task_0033",
           "title": "开发健康检查端点",
           "status": "in_progress",
@@ -424,6 +433,15 @@
           "priority": 2,
           "source": "explore",
           "created_time": "2026-03-20T11:43:08.775341",
+          "result": null
+        },
+        {
+          "task_id": "task_0132",
+          "title": "【反向营销】设计'品牌授权'合作模式",
+          "status": "pending",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-20T11:44:50.411949",
           "result": null
         },
         {
@@ -667,6 +685,15 @@
           "result": null
         },
         {
+          "task_id": "task_0131",
+          "title": "【反向营销】制作联合课程分成协议",
+          "status": "pending",
+          "priority": 2,
+          "source": "self",
+          "created_time": "2026-03-20T11:44:50.411937",
+          "result": null
+        },
+        {
           "task_id": "auto_7_20260320082448",
           "title": "审查系统合规",
           "status": "in_progress",
@@ -714,6 +741,24 @@
           "priority": 0,
           "source": "self",
           "created_time": "2026-03-20T11:40:39.153609",
+          "result": null
+        },
+        {
+          "task_id": "task_0127",
+          "title": "【反向营销】制作'30%分成'合作海报",
+          "status": "pending",
+          "priority": 0,
+          "source": "self",
+          "created_time": "2026-03-20T11:44:50.411851",
+          "result": null
+        },
+        {
+          "task_id": "task_0133",
+          "title": "【反向营销】启动'推荐返佣'计划（第一批10人）",
+          "status": "pending",
+          "priority": 0,
+          "source": "yuzong",
+          "created_time": "2026-03-20T11:44:50.411964",
           "result": null
         },
         {
@@ -867,6 +912,33 @@
           "priority": 1,
           "source": "explore",
           "created_time": "2026-03-20T11:43:08.775326",
+          "result": null
+        },
+        {
+          "task_id": "task_0128",
+          "title": "【反向营销】编写KOL合作话术模板",
+          "status": "pending",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T11:44:50.411874",
+          "result": null
+        },
+        {
+          "task_id": "task_0129",
+          "title": "【反向营销】制作太极API一键推广包（文案+图片+链接）",
+          "status": "pending",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T11:44:50.411898",
+          "result": null
+        },
+        {
+          "task_id": "task_0134",
+          "title": "【反向营销】设计'裂变奖励'机制",
+          "status": "pending",
+          "priority": 1,
+          "source": "explore",
+          "created_time": "2026-03-20T11:44:50.411986",
           "result": null
         },
         {
@@ -1073,6 +1145,24 @@
           "result": null
         },
         {
+          "task_id": "task_0124",
+          "title": "【反向营销】列出AI领域KOL清单（100人）",
+          "status": "pending",
+          "priority": 0,
+          "source": "explore",
+          "created_time": "2026-03-20T11:44:50.411769",
+          "result": null
+        },
+        {
+          "task_id": "task_0125",
+          "title": "【反向营销】整理知识付费博主Top50",
+          "status": "pending",
+          "priority": 0,
+          "source": "explore",
+          "created_time": "2026-03-20T11:44:50.411814",
+          "result": null
+        },
+        {
           "task_id": "task_0083",
           "title": "分析竞品API定价策略",
           "status": "pending",
@@ -1115,6 +1205,15 @@
           "priority": 1,
           "source": "explore",
           "created_time": "2026-03-20T11:43:08.775315",
+          "result": null
+        },
+        {
+          "task_id": "task_0126",
+          "title": "【反向营销】一人公司社群运营者清单",
+          "status": "pending",
+          "priority": 1,
+          "source": "explore",
+          "created_time": "2026-03-20T11:44:50.411833",
           "result": null
         },
         {

@@ -323,3 +323,15 @@ MIT License - 详见 [LICENSE](LICENSE)
 - [项目大纲](confidential/Taiji-Project-Outline.md)
 - [意识系统文档](docs/CONSCIOUSNESS.md)
 - [24线程协议](docs/24-thread-protocol.md)
+
+---
+
+## 🔄 反向营销
+
+**您有流量？我分30%。**
+
+- 推荐成交 = 30%分成
+- 联合课程 = 50%分成
+- 区域代理 = 40%分成
+
+**联系余总：15211116188**
