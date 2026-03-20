@@ -112,6 +112,10 @@ app.include_router(external_agent_router)
 from .signal_collector import router as signal_collector_router
 app.include_router(signal_collector_router)
 
+# 导入并添加24线程路由
+from .thread_routes import router as thread_router
+app.include_router(thread_router)
+
 # 挂载静态文件和模板
 app.mount("/static", StaticFiles(directory=static_dir), name="static")
 templates = Jinja2Templates(directory=templates_dir)
@@ -126,6 +130,11 @@ async def startup_event():
     taiji_engine = RealTaijiCoreEngine()
     logger.info("Taiji API server started")
     logger.info("Taiji Core Engine initialized")
+
+    # 启动太极心跳（10分钟间隔）
+    from core.taiji_heartbeat import start_heartbeat
+    start_heartbeat(10 * 60 * 1000)  # 10分钟
+    logger.info("Taiji Heartbeat started (10min interval)")
 
 # API端点
 @app.get("/api/state", response_model=Dict[str, Any])

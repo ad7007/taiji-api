@@ -6,7 +6,6 @@
 from typing import Dict, List, Tuple, Set
 from dataclasses import dataclass
 from enum import Enum
-import numpy as np
 
 
 class Direction(Enum):
@@ -66,15 +65,14 @@ def is_ke(a: int, b: int) -> bool:
     return KE.get(WUXING.get(a, "")) == WUXING.get(b, "")
 
 
-def build_thread_matrix() -> np.ndarray:
+def build_thread_matrix() -> List[List[int]]:
     """构建线程连接矩阵 M[10×10] (索引1-9)"""
-    M = np.zeros((10, 10), dtype=int)  # 用1-9索引，0不使用
+    M = [[0] * 10 for _ in range(10)]
 
     for i in range(1, 10):
         for j in range(1, 10):
-            if i == j or i == 5 or j == 5:  # 跳过中宫
+            if i == j or i == 5 or j == 5:
                 continue
-            # 阴卦连阳卦
             if i in V_YIN and j in V_YANG:
                 if is_sheng(i, j):
                     M[i][j] = 1
