@@ -1,0 +1,790 @@
+{
+  "task_counter": 76,
+  "created_time": "2026-03-20T08:24:48.199768",
+  "saved_time": "2026-03-20T10:41:48.657831",
+  "queues": {
+    "1": {
+      "palace_name": "数据采集",
+      "tasks": [
+        {
+          "task_id": "task_0021",
+          "title": "监控竞品动态，收集产品更新信息",
+          "status": "in_progress",
+          "priority": 1,
+          "source": "explore",
+          "created_time": "2026-03-20T08:40:54.471172",
+          "result": null
+        },
+        {
+          "task_id": "task_0019",
+          "title": "持久化测试",
+          "status": "completed",
+          "priority": 2,
+          "source": "self",
+          "created_time": "2026-03-20T08:27:08.252000",
+          "result": "已创建 data/taiji_48_keywords.db 数据表"
+        },
+        {
+          "task_id": "task_0020",
+          "title": "扫描GitHub Trending，发现热门AI项目",
+          "status": "in_progress",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-20T08:40:54.471153",
+          "result": null
+        },
+        {
+          "task_id": "task_0022",
+          "title": "建立数据源列表，维护可用API目录",
+          "status": "in_progress",
+          "priority": 2,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471185",
+          "result": null
+        },
+        {
+          "task_id": "auto_1_20260320082448",
+          "title": "扫描外部数据源",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T08:24:48.199927",
+          "result": null
+        },
+        {
+          "task_id": "task_0023",
+          "title": "抓取行业报告，构建知识库",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471198",
+          "result": null
+        },
+        {
+          "task_id": "task_0059",
+          "title": "扫描数据源",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393455",
+          "result": null
+        },
+        {
+          "task_id": "task_0060",
+          "title": "收集外部信息",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393469",
+          "result": null
+        }
+      ]
+    },
+    "2": {
+      "palace_name": "物联产品",
+      "tasks": [
+        {
+          "task_id": "task_0026",
+          "title": "编写API最佳实践文档",
+          "status": "completed",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471229",
+          "result": "已创建 docs/编写API最佳实践文档.md"
+        },
+        {
+          "task_id": "task_0027",
+          "title": "创建API错误码标准化表",
+          "status": "completed",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471237",
+          "result": "任务已完成"
+        },
+        {
+          "task_id": "task_0025",
+          "title": "设计API使用统计面板",
+          "status": "in_progress",
+          "priority": 2,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T08:40:54.471222",
+          "result": null
+        },
+        {
+          "task_id": "task_0024",
+          "title": "分析用户反馈，优化API响应速度",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471214",
+          "result": null
+        },
+        {
+          "task_id": "auto_2_20260320082448",
+          "title": "优化产品体验",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T08:24:48.199942",
+          "result": null
+        },
+        {
+          "task_id": "task_0061",
+          "title": "优化产品",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393484",
+          "result": null
+        },
+        {
+          "task_id": "task_0062",
+          "title": "改进体验",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393492",
+          "result": null
+        }
+      ]
+    },
+    "3": {
+      "palace_name": "技术团队",
+      "tasks": [
+        {
+          "task_id": "task_0030",
+          "title": "优化内存使用，释放闲置资源",
+          "status": "completed",
+          "priority": 0,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471262",
+          "result": "内存状态已恢复正常：1.7G可用，2.6G可分配。内存管理超出智能体直接控制范围。"
+        },
+        {
+          "task_id": "task_0001",
+          "title": "实现24线程协议",
+          "status": "completed",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T08:24:48.199842",
+          "result": "已在taiji_l0_protocol.py中实现24线程L0协议"
+        },
+        {
+          "task_id": "task_0004",
+          "title": "实现24线程天地对接协议",
+          "status": "completed",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T08:26:32.141644",
+          "result": "已在taiji_consciousness.py和taiji_l0_protocol.py中实现天地对接"
+        },
+        {
+          "task_id": "task_0005",
+          "title": "完成阳24线程规则定义",
+          "status": "completed",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T08:26:32.141666",
+          "result": "已完成: 完成阳24线程规则定义"
+        },
+        {
+          "task_id": "task_0006",
+          "title": "完成阴24线程规则定义",
+          "status": "completed",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T08:26:32.141678",
+          "result": "已完成: 完成阴24线程规则定义"
+        },
+        {
+          "task_id": "task_0017",
+          "title": "测试任务",
+          "status": "completed",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T08:27:08.251903",
+          "result": "已创建 docs/24-thread-protocol.md"
+        },
+        {
+          "task_id": "task_0028",
+          "title": "实现48规则路由表",
+          "status": "completed",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T08:40:54.471246",
+          "result": "已完成: 实现48规则路由表"
+        },
+        {
+          "task_id": "task_0029",
+          "title": "开发任务自动分配算法",
+          "status": "in_progress",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T08:40:54.471254",
+          "result": null
+        },
+        {
+          "task_id": "task_0007",
+          "title": "实现中宫48规则路由表",
+          "status": "completed",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T08:26:32.141687",
+          "result": "已完成: 实现中宫48规则路由表"
+        },
+        {
+          "task_id": "task_0031",
+          "title": "编写单元测试覆盖核心模块",
+          "status": "completed",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471272",
+          "result": "已创建 docs/编写单元测试覆盖核心模块.md"
+        },
+        {
+          "task_id": "task_0032",
+          "title": "实现API访问日志系统",
+          "status": "in_progress",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471284",
+          "result": null
+        },
+        {
+          "task_id": "task_0033",
+          "title": "开发健康检查端点",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471297",
+          "result": null
+        },
+        {
+          "task_id": "task_0063",
+          "title": "完善代码",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393503",
+          "result": null
+        },
+        {
+          "task_id": "task_0064",
+          "title": "修复问题",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393512",
+          "result": null
+        }
+      ]
+    },
+    "4": {
+      "palace_name": "品牌战略",
+      "tasks": [
+        {
+          "task_id": "task_0036",
+          "title": "制定定价策略（免费/付费/企业版）",
+          "status": "in_progress",
+          "priority": 0,
+          "source": "explore",
+          "created_time": "2026-03-20T08:40:54.471325",
+          "result": null
+        },
+        {
+          "task_id": "task_0034",
+          "title": "撰写米珞产品介绍文章",
+          "status": "in_progress",
+          "priority": 1,
+          "source": "explore",
+          "created_time": "2026-03-20T08:40:54.471310",
+          "result": null
+        },
+        {
+          "task_id": "task_0035",
+          "title": "分析AI智能体市场竞争格局",
+          "status": "in_progress",
+          "priority": 1,
+          "source": "explore",
+          "created_time": "2026-03-20T08:40:54.471317",
+          "result": null
+        },
+        {
+          "task_id": "task_0038",
+          "title": "创建品牌视觉素材",
+          "status": "completed",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471343",
+          "result": "任务已完成"
+        },
+        {
+          "task_id": "task_0002",
+          "title": "分析市场机会",
+          "status": "in_progress",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-20T08:24:48.199857",
+          "result": null
+        },
+        {
+          "task_id": "task_0037",
+          "title": "设计用户增长策略",
+          "status": "in_progress",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-20T08:40:54.471332",
+          "result": null
+        },
+        {
+          "task_id": "task_0013",
+          "title": "分析市场赚钱渠道",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "explore",
+          "created_time": "2026-03-20T08:26:32.141741",
+          "result": null
+        },
+        {
+          "task_id": "task_0065",
+          "title": "分析趋势",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393523",
+          "result": null
+        },
+        {
+          "task_id": "task_0066",
+          "title": "制定策略",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393530",
+          "result": null
+        }
+      ]
+    },
+    "5": {
+      "palace_name": "中央控制",
+      "tasks": [
+        {
+          "task_id": "task_0018",
+          "title": "生命周期测试",
+          "status": "completed",
+          "priority": 2,
+          "source": "self",
+          "created_time": "2026-03-20T08:27:08.251928",
+          "result": "完成"
+        },
+        {
+          "task_id": "task_0003",
+          "title": "协调各宫运转",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "self",
+          "created_time": "2026-03-20T08:24:48.199866",
+          "result": null
+        },
+        {
+          "task_id": "task_0067",
+          "title": "监控各宫",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393540",
+          "result": null
+        },
+        {
+          "task_id": "task_0068",
+          "title": "协调运转",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393546",
+          "result": null
+        }
+      ]
+    },
+    "6": {
+      "palace_name": "质量监控",
+      "tasks": [
+        {
+          "task_id": "task_0039",
+          "title": "创建taiji_48_keywords数据表",
+          "status": "completed",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T08:40:54.471353",
+          "result": "数据操作完成"
+        },
+        {
+          "task_id": "task_0040",
+          "title": "设置系统健康监控告警",
+          "status": "in_progress",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471360",
+          "result": null
+        },
+        {
+          "task_id": "task_0008",
+          "title": "创建taiji_48_keywords数据表",
+          "status": "completed",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T08:26:32.141696",
+          "result": "数据操作完成"
+        },
+        {
+          "task_id": "task_0042",
+          "title": "编写性能基准测试",
+          "status": "completed",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471383",
+          "result": "已创建 docs/编写性能基准测试.md"
+        },
+        {
+          "task_id": "task_0009",
+          "title": "插入48组关键词数据",
+          "status": "in_progress",
+          "priority": 2,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T08:26:32.141704",
+          "result": null
+        },
+        {
+          "task_id": "task_0041",
+          "title": "建立自动备份机制",
+          "status": "in_progress",
+          "priority": 2,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471371",
+          "result": null
+        },
+        {
+          "task_id": "auto_6_20260320082448",
+          "title": "监控系统健康",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T08:24:48.199956",
+          "result": null
+        },
+        {
+          "task_id": "task_0043",
+          "title": "配置日志轮转策略",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471395",
+          "result": null
+        },
+        {
+          "task_id": "task_0069",
+          "title": "监控系统",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393554",
+          "result": null
+        },
+        {
+          "task_id": "task_0070",
+          "title": "执行备份",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393565",
+          "result": null
+        }
+      ]
+    },
+    "7": {
+      "palace_name": "法务框架",
+      "tasks": [
+        {
+          "task_id": "task_0016",
+          "title": "编写测试用例",
+          "status": "completed",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T08:26:32.141770",
+          "result": "文档已创建"
+        },
+        {
+          "task_id": "task_0044",
+          "title": "编写用户服务协议",
+          "status": "completed",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471405",
+          "result": "已创建 docs/编写用户服务协议.md"
+        },
+        {
+          "task_id": "task_0045",
+          "title": "制定隐私政策",
+          "status": "in_progress",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471412",
+          "result": null
+        },
+        {
+          "task_id": "task_0015",
+          "title": "建立认证体系文档",
+          "status": "completed",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T08:26:32.141763",
+          "result": "已创建 docs/建立认证体系文档.md"
+        },
+        {
+          "task_id": "task_0047",
+          "title": "创建安全审计检查清单",
+          "status": "completed",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471428",
+          "result": "任务已完成"
+        },
+        {
+          "task_id": "task_0048",
+          "title": "编写API SLA文档",
+          "status": "completed",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471436",
+          "result": "已创建 docs/编写API_SLA文档.md"
+        },
+        {
+          "task_id": "task_0046",
+          "title": "建立代码审查流程",
+          "status": "in_progress",
+          "priority": 2,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471420",
+          "result": null
+        },
+        {
+          "task_id": "auto_7_20260320082448",
+          "title": "审查系统合规",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T08:24:48.199966",
+          "result": null
+        },
+        {
+          "task_id": "task_0071",
+          "title": "审查质量",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393575",
+          "result": null
+        },
+        {
+          "task_id": "task_0072",
+          "title": "验证合规",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393583",
+          "result": null
+        }
+      ]
+    },
+    "8": {
+      "palace_name": "营销客服",
+      "tasks": [
+        {
+          "task_id": "task_0051",
+          "title": "创建用户入门指南",
+          "status": "completed",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471464",
+          "result": "任务已完成"
+        },
+        {
+          "task_id": "task_0010",
+          "title": "编写24线程协议规范文档",
+          "status": "completed",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T08:26:32.141712",
+          "result": "已创建 docs/编写24线程协议规范文档.md"
+        },
+        {
+          "task_id": "task_0052",
+          "title": "编写FAQ文档",
+          "status": "completed",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T08:40:54.471476",
+          "result": "已创建 docs/编写FAQ文档.md"
+        },
+        {
+          "task_id": "task_0050",
+          "title": "制作产品演示视频脚本",
+          "status": "in_progress",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-20T08:40:54.471453",
+          "result": null
+        },
+        {
+          "task_id": "task_0049",
+          "title": "撰写技术博客文章（太极系统介绍）",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "explore",
+          "created_time": "2026-03-20T08:40:54.471445",
+          "result": null
+        },
+        {
+          "task_id": "auto_8_20260320082448",
+          "title": "生成知识内容",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T08:24:48.199975",
+          "result": null
+        },
+        {
+          "task_id": "task_0011",
+          "title": "制作可视化对接流程图",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T08:26:32.141720",
+          "result": null
+        },
+        {
+          "task_id": "task_0053",
+          "title": "设计社交媒体内容日历",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "explore",
+          "created_time": "2026-03-20T08:40:54.471487",
+          "result": null
+        },
+        {
+          "task_id": "task_0073",
+          "title": "生成内容",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393592",
+          "result": null
+        },
+        {
+          "task_id": "task_0074",
+          "title": "服务客户",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393600",
+          "result": null
+        }
+      ]
+    },
+    "9": {
+      "palace_name": "行业生态",
+      "tasks": [
+        {
+          "task_id": "task_0055",
+          "title": "分析API付费市场机会",
+          "status": "in_progress",
+          "priority": 0,
+          "source": "explore",
+          "created_time": "2026-03-20T08:40:54.471505",
+          "result": null
+        },
+        {
+          "task_id": "task_0012",
+          "title": "研究知识付费内容机会",
+          "status": "in_progress",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-20T08:26:32.141730",
+          "result": null
+        },
+        {
+          "task_id": "task_0014",
+          "title": "探索API商业化路径",
+          "status": "in_progress",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-20T08:26:32.141753",
+          "result": null
+        },
+        {
+          "task_id": "task_0056",
+          "title": "建立合作伙伴清单",
+          "status": "in_progress",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-20T08:40:54.471516",
+          "result": null
+        },
+        {
+          "task_id": "task_0057",
+          "title": "追踪行业政策法规变化",
+          "status": "in_progress",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-20T08:40:54.471524",
+          "result": null
+        },
+        {
+          "task_id": "task_0054",
+          "title": "研究AI智能体商业化案例",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "explore",
+          "created_time": "2026-03-20T08:40:54.471497",
+          "result": null
+        },
+        {
+          "task_id": "auto_9_20260320082448",
+          "title": "研究行业生态",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T08:24:48.199987",
+          "result": null
+        },
+        {
+          "task_id": "task_0058",
+          "title": "撰写行业趋势报告",
+          "status": "in_progress",
+          "priority": 3,
+          "source": "explore",
+          "created_time": "2026-03-20T08:40:54.471532",
+          "result": null
+        },
+        {
+          "task_id": "task_0075",
+          "title": "研究生态",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393611",
+          "result": null
+        },
+        {
+          "task_id": "task_0076",
+          "title": "发现机会",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-20T10:35:52.393618",
+          "result": null
+        }
+      ]
+    }
+  }
+}

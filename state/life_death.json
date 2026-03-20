@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-03-20T10:28:57.973678",
+  "alive": true,
+  "reasons_alive": [
+    "\u5fc3\u8df3\u8fdb\u7a0b\u8fd0\u884c",
+    "\u4efb\u52a1\u961f\u52172\u4e2a"
+  ],
+  "reasons_dead": [],
+  "checks": {
+    "heartbeat_process": true,
+    "pending_tasks": 2,
+    "alive_palaces": 9,
+    "last_heartbeat": "2026-03-20T10:28:57.968072",
+    "heartbeat_age_seconds": 0.014702
+  }
+}

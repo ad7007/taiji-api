@@ -1,0 +1,42 @@
+{
+  "created": "2026-03-20T08:14:13.640993",
+  "tasks": {
+    "1": {
+      "task": "扫描外部数据源，寻找有价值信息",
+      "type": "collect"
+    },
+    "2": {
+      "task": "检查产品状态，优化产品体验",
+      "type": "optimize"
+    },
+    "3": {
+      "task": "完善太极API代码，提升系统能力",
+      "type": "develop"
+    },
+    "4": {
+      "task": "分析市场趋势，制定品牌策略",
+      "type": "analyze"
+    },
+    "5": {
+      "task": "协调各宫运转，确保系统活着",
+      "type": "coordinate"
+    },
+    "6": {
+      "task": "监控系统健康，执行备份任务",
+      "type": "monitor"
+    },
+    "7": {
+      "task": "审查系统合规，确保质量标准",
+      "type": "validate"
+    },
+    "8": {
+      "task": "生成知识内容，储备服务能力",
+      "type": "content"
+    },
+    "9": {
+      "task": "研究行业生态，发现新机会",
+      "type": "research"
+    }
+  },
+  "status": "alive"
+}

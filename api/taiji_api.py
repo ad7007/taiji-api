@@ -88,6 +88,18 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# 导入并添加米珞核心能力路由
+from .milo_routes import router as milo_router
+app.include_router(milo_router)
+
+# 导入并添加意识路由
+from .consciousness_routes import router as consciousness_router
+app.include_router(consciousness_router)
+
+# 导入并添加任务管理路由
+from .task_routes import router as task_router
+app.include_router(task_router)
+
 # 挂载静态文件和模板
 app.mount("/static", StaticFiles(directory=static_dir), name="static")
 templates = Jinja2Templates(directory=templates_dir)
@@ -494,14 +506,17 @@ async def palace3_optimization_tips():
                 "action": "无需操作"
             })
         
+        current_week = report.get("this_week", {})
+        current_month = report.get("this_month", {})
+        
         return {
             "current_status": {
-                "zero_token_ratio": report["this_week"]["zero_token_ratio"],
-                "local_model_ratio": report["this_week"]["local_model_tasks"] / report["this_week"]["total_tasks"] if report["this_week"]["total_tasks"] > 0 else 0,
-                "monthly_cost": report["this_month"]["total_cost"]
+                "zero_token_ratio": current_week.get("zero_token_ratio", 0),
+                "local_model_ratio": current_week.get("local_model_tasks", 0) / current_week.get("total_tasks", 1) if current_week.get("total_tasks", 0) > 0 else 0,
+                "monthly_cost": current_month.get("total_cost", 0.0)
             },
             "optimization_tips": tips,
-            "potential_savings": report["savings"]["vs_all_api_token"]
+            "potential_savings": report.get("savings", {}).get("vs_all_api_token", 0.0)
         }
     except Exception as e:
         logger.error(f"Palace 3 optimization tips failed: {e}")

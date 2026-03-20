@@ -523,6 +523,6 @@ def palace3_compare_modes(task_type: str) -> Dict[str, Any]:
     return get_palace3_allocator().compare_modes(task_type)
 
 
-def palace3_get_cost_report() -> Dict[str, Any]:
+def palace3_get_cost_report(days: int = 7) -> Dict[str, Any]:
     """获取成本报告（供 L4 引擎调用）"""
-    return get_palace3_allocator().get_cost_report()
+    return get_palace3_allocator().get_cost_report(days)
