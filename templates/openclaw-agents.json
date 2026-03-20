@@ -1,0 +1,110 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "qwencode/glm-5"
+      },
+      "workspace": "/root/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    },
+    "list": [
+      {
+        "id": "main"
+      },
+      {
+        "id": "palace-1",
+        "name": "palace-1",
+        "workspace": "/root/.openclaw/workspaces/palace-1",
+        "agentDir": "/root/.openclaw/agents/palace-1/agent",
+        "model": "qwencode/glm-5",
+        "identity": {
+          "name": "1宫-数据采集",
+          "emoji": "📥"
+        }
+      },
+      {
+        "id": "palace-2",
+        "name": "palace-2",
+        "workspace": "/root/.openclaw/workspaces/palace-2",
+        "agentDir": "/root/.openclaw/agents/palace-2/agent",
+        "model": "qwencode/glm-5",
+        "identity": {
+          "name": "2宫-产品质量",
+          "emoji": "✓"
+        }
+      },
+      {
+        "id": "palace-3",
+        "name": "palace-3",
+        "workspace": "/root/.openclaw/workspaces/palace-3",
+        "agentDir": "/root/.openclaw/agents/palace-3/agent",
+        "model": "qwencode/glm-5",
+        "identity": {
+          "name": "3宫-技术团队",
+          "emoji": "💻"
+        }
+      },
+      {
+        "id": "palace-4",
+        "name": "palace-4",
+        "workspace": "/root/.openclaw/workspaces/palace-4",
+        "agentDir": "/root/.openclaw/agents/palace-4/agent",
+        "model": "qwencode/glm-5",
+        "identity": {
+          "name": "4宫-品牌战略",
+          "emoji": "🎯"
+        }
+      },
+      {
+        "id": "palace-6",
+        "name": "palace-6",
+        "workspace": "/root/.openclaw/workspaces/palace-6",
+        "agentDir": "/root/.openclaw/agents/palace-6/agent",
+        "model": "qwencode/glm-5",
+        "identity": {
+          "name": "6宫-物联监控",
+          "emoji": "📡"
+        }
+      },
+      {
+        "id": "palace-7",
+        "name": "palace-7",
+        "workspace": "/root/.openclaw/workspaces/palace-7",
+        "agentDir": "/root/.openclaw/agents/palace-7/agent",
+        "model": "qwencode/glm-5",
+        "identity": {
+          "name": "7宫-法务框架",
+          "emoji": "⚖️"
+        }
+      },
+      {
+        "id": "palace-8",
+        "name": "palace-8",
+        "workspace": "/root/.openclaw/workspaces/palace-8",
+        "agentDir": "/root/.openclaw/agents/palace-8/agent",
+        "model": "qwencode/glm-5",
+        "identity": {
+          "name": "8宫-营销客服",
+          "emoji": "📢"
+        }
+      },
+      {
+        "id": "palace-9",
+        "name": "palace-9",
+        "workspace": "/root/.openclaw/workspaces/palace-9",
+        "agentDir": "/root/.openclaw/agents/palace-9/agent",
+        "model": "qwencode/glm-5",
+        "identity": {
+          "name": "9宫-行业生态",
+          "emoji": "🌐"
+        }
+      }
+    ]
+  }
+}

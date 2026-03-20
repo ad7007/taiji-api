@@ -1,0 +1,202 @@
+{
+  "task_0194": {
+    "task_id": "task_0194",
+    "title": "【数据采集】抓取竞品AI Agent产品定价信息",
+    "scene": "scrape",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T21:02:56.616060",
+    "flow_index": 0
+  },
+  "task_0195": {
+    "task_id": "task_0195",
+    "title": "【品牌战略】撰写太极系统开源发布计划",
+    "scene": "brand",
+    "complexity": "complex",
+    "team": [
+      5,
+      1,
+      2,
+      4,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T21:02:56.616632",
+    "flow_index": 0
+  },
+  "task_0196": {
+    "task_id": "task_0196",
+    "title": "【技术团队】优化本地模型推理性能",
+    "scene": "code",
+    "complexity": "complex",
+    "team": [
+      5,
+      1,
+      2,
+      3,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T21:02:56.617475",
+    "flow_index": 0
+  },
+  "task_0197": {
+    "task_id": "task_0197",
+    "title": "【营销客服】整理客户反馈FAQ文档",
+    "scene": "content",
+    "complexity": "standard",
+    "team": [
+      2,
+      5,
+      8
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T21:02:56.618080",
+    "flow_index": 0
+  },
+  "task_0198": {
+    "task_id": "task_0198",
+    "title": "【生态】探索与开源社区合作机会",
+    "scene": "ecology",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T21:02:56.618886",
+    "flow_index": 0
+  },
+  "task_0199": {
+    "task_id": "task_0199",
+    "title": "【物联监控】建立太极API健康检查监控面板",
+    "scene": "monitor",
+    "complexity": "standard",
+    "team": [
+      5,
+      6,
+      3
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T22:03:00.000000",
+    "flow_index": 0
+  },
+  "task_0200": {
+    "task_id": "task_0200",
+    "title": "【法务框架】起草太极系统开源协议与免责声明",
+    "scene": "legal",
+    "complexity": "complex",
+    "team": [
+      5,
+      7,
+      4
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T22:03:00.000000",
+    "flow_index": 0
+  },
+  "task_0201": {
+    "task_id": "task_0201",
+    "title": "【物联监控】实现48端状态实时告警机制",
+    "scene": "monitor",
+    "complexity": "standard",
+    "team": [
+      5,
+      6,
+      1
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T22:03:00.000000",
+    "flow_index": 0
+  },
+  "task_0202": {
+    "task_id": "task_0202",
+    "title": "【法务框架】整理AI Agent服务条款与隐私政策模板",
+    "scene": "legal",
+    "complexity": "standard",
+    "team": [
+      5,
+      7,
+      8
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T22:03:00.000000",
+    "flow_index": 0
+  },
+  "task_0203": {
+    "task_id": "task_0203",
+    "title": "【中央控制】实现相生相克五行循环引擎",
+    "scene": "core",
+    "complexity": "complex",
+    "team": [
+      5,
+      3,
+      1
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T23:06:10.827130",
+    "flow_index": 0
+  },
+  "task_0204": {
+    "task_id": "task_0204",
+    "title": "【技术团队】完善N宫组合决策算法",
+    "scene": "code",
+    "complexity": "complex",
+    "team": [
+      5,
+      3,
+      7
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T23:06:10.827146",
+    "flow_index": 0
+  },
+  "task_0205": {
+    "task_id": "task_0205",
+    "title": "【数据采集】采集AI Agent行业定价数据更新",
+    "scene": "scrape",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      4
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T23:06:10.827149",
+    "flow_index": 0
+  },
+  "task_0206": {
+    "task_id": "task_0206",
+    "title": "【营销客服】撰写企业版销售话术与案例",
+    "scene": "content",
+    "complexity": "standard",
+    "team": [
+      5,
+      8,
+      4
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T23:06:10.827151",
+    "flow_index": 0
+  },
+  "task_0207": {
+    "task_id": "task_0207",
+    "title": "【生态】探索开源社区变现渠道与合作模式",
+    "scene": "ecology",
+    "complexity": "complex",
+    "team": [
+      5,
+      9,
+      4
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T23:06:10.827153",
+    "flow_index": 0
+  }
+}

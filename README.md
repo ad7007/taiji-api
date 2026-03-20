@@ -74,7 +74,27 @@
 
 ## 🚀 快速开始
 
-### 安装
+### 方式一：完整安装（推荐）
+
+使用安装脚本自动配置太极系统 + OpenClaw智能体：
+
+```bash
+# 克隆项目
+git clone https://github.com/ad7007/taiji-api.git
+cd taiji-api
+
+# 运行安装脚本
+chmod +x scripts/install.sh
+./scripts/install.sh
+```
+
+安装脚本会自动：
+- ✅ 安装Python依赖
+- ✅ 创建8个宫位智能体配置
+- ✅ 同步Skill到OpenClaw
+- ✅ 更新OpenClaw配置
+
+### 方式二：手动安装
 
 ```bash
 # 克隆项目

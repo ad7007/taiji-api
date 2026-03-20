@@ -1,0 +1,154 @@
+{
+  "tasks": [
+    {
+      "task_id": "task_1_20260320152108",
+      "palace_id": 1,
+      "yao_level": 1,
+      "input_text": "数据源连接稳定，响应正常",
+      "detected_keywords": [
+        "连接",
+        "数据源",
+        "响应"
+      ],
+      "manual_state": "阳",
+      "timestamp": "2026-03-20T15:21:08.193858"
+    },
+    {
+      "task_id": "task_2_20260320152108",
+      "palace_id": 1,
+      "yao_level": 1,
+      "input_text": "API延迟很高，连接超时",
+      "detected_keywords": [
+        "连接",
+        "API",
+        "延迟",
+        "超时"
+      ],
+      "manual_state": "阴",
+      "timestamp": "2026-03-20T15:21:08.221930"
+    },
+    {
+      "task_id": "task_3_20260320152108",
+      "palace_id": 1,
+      "yao_level": 1,
+      "input_text": "网络正常，数据源高速稳定",
+      "detected_keywords": [
+        "数据源",
+        "网络"
+      ],
+      "manual_state": "阳",
+      "timestamp": "2026-03-20T15:21:08.250108"
+    },
+    {
+      "task_id": "task_4_20260320152129",
+      "palace_id": 1,
+      "yao_level": 1,
+      "input_text": "连接正常稳定",
+      "detected_keywords": [
+        "连接"
+      ],
+      "manual_state": "阳",
+      "timestamp": "2026-03-20T15:21:29.549450"
+    },
+    {
+      "task_id": "task_5_20260320152129",
+      "palace_id": 1,
+      "yao_level": 1,
+      "input_text": "延迟超时断开",
+      "detected_keywords": [
+        "延迟",
+        "超时",
+        "断开"
+      ],
+      "manual_state": "阴",
+      "timestamp": "2026-03-20T15:21:29.559450"
+    },
+    {
+      "task_id": "task_6_20260320152129",
+      "palace_id": 1,
+      "yao_level": 1,
+      "input_text": "网络稳定高速",
+      "detected_keywords": [
+        "网络"
+      ],
+      "manual_state": "阳",
+      "timestamp": "2026-03-20T15:21:29.571769"
+    }
+  ],
+  "keyword_stats": {
+    "1_1_连接": {
+      "keyword": "连接",
+      "palace_id": 1,
+      "yao_level": 1,
+      "yang_count": 2,
+      "yin_count": 1,
+      "total_count": 3,
+      "last_seen": "2026-03-20T15:21:29.549460"
+    },
+    "1_1_数据源": {
+      "keyword": "数据源",
+      "palace_id": 1,
+      "yao_level": 1,
+      "yang_count": 2,
+      "yin_count": 0,
+      "total_count": 2,
+      "last_seen": "2026-03-20T15:21:08.250118"
+    },
+    "1_1_响应": {
+      "keyword": "响应",
+      "palace_id": 1,
+      "yao_level": 1,
+      "yang_count": 1,
+      "yin_count": 0,
+      "total_count": 1,
+      "last_seen": "2026-03-20T15:21:08.193887"
+    },
+    "1_1_API": {
+      "keyword": "API",
+      "palace_id": 1,
+      "yao_level": 1,
+      "yang_count": 0,
+      "yin_count": 1,
+      "total_count": 1,
+      "last_seen": "2026-03-20T15:21:08.221948"
+    },
+    "1_1_延迟": {
+      "keyword": "延迟",
+      "palace_id": 1,
+      "yao_level": 1,
+      "yang_count": 0,
+      "yin_count": 2,
+      "total_count": 2,
+      "last_seen": "2026-03-20T15:21:29.559461"
+    },
+    "1_1_超时": {
+      "keyword": "超时",
+      "palace_id": 1,
+      "yao_level": 1,
+      "yang_count": 0,
+      "yin_count": 2,
+      "total_count": 2,
+      "last_seen": "2026-03-20T15:21:29.559465"
+    },
+    "1_1_网络": {
+      "keyword": "网络",
+      "palace_id": 1,
+      "yao_level": 1,
+      "yang_count": 2,
+      "yin_count": 0,
+      "total_count": 2,
+      "last_seen": "2026-03-20T15:21:29.571778"
+    },
+    "1_1_断开": {
+      "keyword": "断开",
+      "palace_id": 1,
+      "yao_level": 1,
+      "yang_count": 0,
+      "yin_count": 1,
+      "total_count": 1,
+      "last_seen": "2026-03-20T15:21:29.559471"
+    }
+  },
+  "task_counter": 6,
+  "last_updated": "2026-03-20T15:21:29.571927"
+}

@@ -1,0 +1,65 @@
+{
+  "1": {
+    "name": "1-数据采集",
+    "load": 0.4,
+    "status": "idle",
+    "current_task": "task_0198",
+    "element": "水"
+  },
+  "2": {
+    "name": "2-产品质量",
+    "load": 0.3,
+    "status": "idle",
+    "current_task": "task_0197",
+    "element": "土"
+  },
+  "3": {
+    "name": "3-技术团队",
+    "load": 0.1,
+    "status": "idle",
+    "current_task": "task_0196",
+    "element": "木"
+  },
+  "4": {
+    "name": "4-品牌战略",
+    "load": 0.1,
+    "status": "idle",
+    "current_task": "task_0195",
+    "element": "木"
+  },
+  "5": {
+    "name": "5-中央控制",
+    "load": 0.5,
+    "status": "idle",
+    "current_task": "task_0198",
+    "element": "土"
+  },
+  "6": {
+    "name": "6-物联监控",
+    "load": 0.2,
+    "status": "idle",
+    "current_task": "task_0199",
+    "element": "金"
+  },
+  "7": {
+    "name": "7-法务框架",
+    "load": 0.2,
+    "status": "idle",
+    "current_task": "task_0200",
+    "element": "金"
+  },
+  "8": {
+    "name": "8-营销客服",
+    "load": 0.1,
+    "status": "idle",
+    "current_task": "task_0197",
+    "element": "土"
+  },
+  "9": {
+    "name": "9-行业生态",
+    "load": 0.4,
+    "status": "idle",
+    "current_task": "task_0198",
+    "element": "火"
+  }
+}

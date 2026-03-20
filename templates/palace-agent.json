@@ -1,0 +1,7 @@
+{
+  "agentId": "PALACE_ID",
+  "displayName": "PALACE_NAME",
+  "workspace": "/root/.openclaw/workspaces/palace-PALACE_NUM",
+  "model": "qwencode/glm-5",
+  "defaultModel": "qwencode/glm-5"
+}
