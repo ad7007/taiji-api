@@ -116,6 +116,10 @@ app.include_router(signal_collector_router)
 from .thread_routes import router as thread_router
 app.include_router(thread_router)
 
+# 导入并添加N宫组合路由
+from .combinations_routes import router as combinations_router
+app.include_router(combinations_router)
+
 # 挂载静态文件和模板
 app.mount("/static", StaticFiles(directory=static_dir), name="static")
 templates = Jinja2Templates(directory=templates_dir)

@@ -1,17 +1,1 @@
-{
-  "agent_ab376cf3": {
-    "agent_id": "agent_ab376cf3",
-    "name": "测试智能体",
-    "owner": "米珞",
-    "capabilities": [
-      "data_collection",
-      "analysis"
-    ],
-    "endpoint": "http://localhost:9000",
-    "description": "",
-    "status": "idle",
-    "registered_at": "2026-03-20T16:14:18.920575",
-    "last_heartbeat": null,
-    "total_tasks_completed": 0
-  }
-}
+{}
