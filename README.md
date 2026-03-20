@@ -314,3 +314,12 @@ MIT License - 详见 [LICENSE](LICENSE)
 
 ---
 
+
+---
+
+## 📚 文档
+
+- [太极九宫敏捷架构 (PDF)](docs/OpenClaw_Taiji_Architecture.pdf)
+- [项目大纲](confidential/Taiji-Project-Outline.md)
+- [意识系统文档](docs/CONSCIOUSNESS.md)
+- [24线程协议](docs/24-thread-protocol.md)
