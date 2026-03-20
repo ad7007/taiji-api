@@ -1,7 +1,7 @@
 {
-  "task_counter": 84,
+  "task_counter": 109,
   "created_time": "2026-03-20T08:24:48.199768",
-  "saved_time": "2026-03-20T11:32:59.339098",
+  "saved_time": "2026-03-20T11:39:43.601127",
   "queues": {
     "1": {
       "palace_name": "数据采集",
@@ -161,6 +161,15 @@
           "result": "内存状态已恢复正常：1.7G可用，2.6G可分配。内存管理超出智能体直接控制范围。"
         },
         {
+          "task_id": "task_0085",
+          "title": "实现三层九域架构（阳/横向/阴三层）",
+          "status": "pending",
+          "priority": 0,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T11:35:33.641710",
+          "result": null
+        },
+        {
           "task_id": "task_0001",
           "title": "实现24线程协议",
           "status": "completed",
@@ -248,6 +257,24 @@
           "priority": 1,
           "source": "self",
           "created_time": "2026-03-20T08:40:54.471284",
+          "result": null
+        },
+        {
+          "task_id": "task_0086",
+          "title": "实现双句柄路由（成功/错误双路径）",
+          "status": "pending",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T11:35:33.641731",
+          "result": null
+        },
+        {
+          "task_id": "task_0087",
+          "title": "实现三层变量作用域（SYSTEM/SESSION/VISITOR）",
+          "status": "pending",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T11:35:33.641746",
           "result": null
         },
         {
@@ -361,6 +388,15 @@
           "priority": 2,
           "source": "explore",
           "created_time": "2026-03-20T11:32:59.339039",
+          "result": null
+        },
+        {
+          "task_id": "task_0089",
+          "title": "完善太极九宫品牌定位",
+          "status": "pending",
+          "priority": 2,
+          "source": "self",
+          "created_time": "2026-03-20T11:35:33.641771",
           "result": null
         },
         {
@@ -586,6 +622,15 @@
           "result": "已创建 docs/编写API_SLA文档.md"
         },
         {
+          "task_id": "task_0088",
+          "title": "实现RBAC权限控制",
+          "status": "pending",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-20T11:35:33.641760",
+          "result": null
+        },
+        {
           "task_id": "task_0046",
           "title": "建立代码审查流程",
           "status": "in_progress",
@@ -627,6 +672,15 @@
       "palace_name": "营销客服",
       "tasks": [
         {
+          "task_id": "task_0107",
+          "title": "设计太极API付费转化漏斗",
+          "status": "pending",
+          "priority": 0,
+          "source": "explore",
+          "created_time": "2026-03-20T11:39:43.601089",
+          "result": null
+        },
+        {
           "task_id": "task_0051",
           "title": "创建用户入门指南",
           "status": "completed",
@@ -663,6 +717,87 @@
           "result": null
         },
         {
+          "task_id": "task_0091",
+          "title": "撰写《太极九宫：让AI像生命体一样运转》公众号文章",
+          "status": "pending",
+          "priority": 1,
+          "source": "explore",
+          "created_time": "2026-03-20T11:39:43.600888",
+          "result": null
+        },
+        {
+          "task_id": "task_0092",
+          "title": "制作太极API快速入门视频（5分钟）",
+          "status": "pending",
+          "priority": 1,
+          "source": "explore",
+          "created_time": "2026-03-20T11:39:43.600908",
+          "result": null
+        },
+        {
+          "task_id": "task_0095",
+          "title": "运营太极API公众号（周更）",
+          "status": "pending",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T11:39:43.600946",
+          "result": null
+        },
+        {
+          "task_id": "task_0096",
+          "title": "建立太极API用户社群（微信群）",
+          "status": "pending",
+          "priority": 1,
+          "source": "explore",
+          "created_time": "2026-03-20T11:39:43.600957",
+          "result": null
+        },
+        {
+          "task_id": "task_0099",
+          "title": "联系AI博主推广太极API",
+          "status": "pending",
+          "priority": 1,
+          "source": "explore",
+          "created_time": "2026-03-20T11:39:43.600991",
+          "result": null
+        },
+        {
+          "task_id": "task_0102",
+          "title": "寻找科技媒体报道机会",
+          "status": "pending",
+          "priority": 1,
+          "source": "explore",
+          "created_time": "2026-03-20T11:39:43.601028",
+          "result": null
+        },
+        {
+          "task_id": "task_0103",
+          "title": "设计太极API新手引导流程",
+          "status": "pending",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T11:39:43.601040",
+          "result": null
+        },
+        {
+          "task_id": "task_0105",
+          "title": "编写太极API常见问题FAQ",
+          "status": "pending",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T11:39:43.601064",
+          "result": null
+        },
+        {
+          "task_id": "task_0108",
+          "title": "制定用户付费激励方案",
+          "status": "pending",
+          "priority": 1,
+          "source": "explore",
+          "created_time": "2026-03-20T11:39:43.601102",
+          "result": null
+        },
+        {
           "task_id": "task_0050",
           "title": "制作产品演示视频脚本",
           "status": "in_progress",
@@ -687,6 +822,87 @@
           "priority": 2,
           "source": "self",
           "created_time": "2026-03-20T11:32:59.339071",
+          "result": null
+        },
+        {
+          "task_id": "task_0093",
+          "title": "设计太极API宣传海报",
+          "status": "pending",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-20T11:39:43.600922",
+          "result": null
+        },
+        {
+          "task_id": "task_0094",
+          "title": "编写太极API使用案例集（10个真实场景）",
+          "status": "pending",
+          "priority": 2,
+          "source": "self",
+          "created_time": "2026-03-20T11:39:43.600934",
+          "result": null
+        },
+        {
+          "task_id": "task_0097",
+          "title": "在即刻发布太极API动态",
+          "status": "pending",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-20T11:39:43.600968",
+          "result": null
+        },
+        {
+          "task_id": "task_0098",
+          "title": "在小红书发布太极API使用技巧",
+          "status": "pending",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-20T11:39:43.600979",
+          "result": null
+        },
+        {
+          "task_id": "task_0100",
+          "title": "在Product Hunt发布太极API",
+          "status": "pending",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-20T11:39:43.601002",
+          "result": null
+        },
+        {
+          "task_id": "task_0101",
+          "title": "在Hacker News分享太极API",
+          "status": "pending",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-20T11:39:43.601016",
+          "result": null
+        },
+        {
+          "task_id": "task_0104",
+          "title": "制作太极API功能演示GIF",
+          "status": "pending",
+          "priority": 2,
+          "source": "self",
+          "created_time": "2026-03-20T11:39:43.601052",
+          "result": null
+        },
+        {
+          "task_id": "task_0106",
+          "title": "建立用户反馈收集机制",
+          "status": "pending",
+          "priority": 2,
+          "source": "self",
+          "created_time": "2026-03-20T11:39:43.601077",
+          "result": null
+        },
+        {
+          "task_id": "task_0109",
+          "title": "分析用户付费行为数据",
+          "status": "pending",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-20T11:39:43.601115",
           "result": null
         },
         {
@@ -773,6 +989,15 @@
           "priority": 1,
           "source": "explore",
           "created_time": "2026-03-20T11:32:59.339090",
+          "result": null
+        },
+        {
+          "task_id": "task_0090",
+          "title": "建立MCP协议生态对接",
+          "status": "pending",
+          "priority": 1,
+          "source": "explore",
+          "created_time": "2026-03-20T11:35:33.641781",
           "result": null
         },
         {
