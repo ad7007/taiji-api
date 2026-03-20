@@ -1,7 +1,7 @@
 {
-  "task_counter": 134,
+  "task_counter": 137,
   "created_time": "2026-03-20T08:24:48.199768",
-  "saved_time": "2026-03-20T11:44:50.412004",
+  "saved_time": "2026-03-20T12:19:51.942946",
   "queues": {
     "1": {
       "palace_name": "数据采集",
@@ -334,6 +334,15 @@
           "priority": 0,
           "source": "self",
           "created_time": "2026-03-20T11:43:08.775278",
+          "result": null
+        },
+        {
+          "task_id": "task_0135",
+          "title": "【定价】创建¥29.9试用版（7天）",
+          "status": "pending",
+          "priority": 0,
+          "source": "yuzong",
+          "created_time": "2026-03-20T12:19:51.942892",
           "result": null
         },
         {
@@ -939,6 +948,24 @@
           "priority": 1,
           "source": "explore",
           "created_time": "2026-03-20T11:44:50.411986",
+          "result": null
+        },
+        {
+          "task_id": "task_0136",
+          "title": "【定价】更新README定价说明",
+          "status": "pending",
+          "priority": 1,
+          "source": "yuzong",
+          "created_time": "2026-03-20T12:19:51.942912",
+          "result": null
+        },
+        {
+          "task_id": "task_0137",
+          "title": "【定价】制作试用版开通流程",
+          "status": "pending",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-20T12:19:51.942931",
           "result": null
         },
         {
