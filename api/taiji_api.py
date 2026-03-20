@@ -755,3 +755,36 @@ async def configure_engine(request: ConfigureEngineRequest):
 
 if __name__ == "__main__":
     uvicorn.run("taiji_api:app", host="0.0.0.0", port=8000, reload=True)
+# ==================== 8宫聊天机器人 ====================
+
+from core.taiji_chatbot import get_chatbot
+
+class ChatRequest(BaseModel):
+    message: str
+    history: Optional[List[Dict]] = None
+
+@app.post("/api/chat")
+async def chat_with_bot(request: ChatRequest):
+    """
+    与米珞聊天
+    
+    8宫营销客服能力
+    """
+    bot = get_chatbot()
+    result = bot.chat(request.message, request.history)
+    return result
+
+@app.get("/api/chat/capabilities")
+async def get_chat_capabilities():
+    """获取聊天机器人能力"""
+    return {
+        "name": "米珞",
+        "role": "太极API客服助手",
+        "capabilities": [
+            "product_inquiry",    # 产品咨询
+            "pricing_question",   # 价格问题
+            "tech_support",       # 技术支持
+            "partnership",        # 合作咨询
+        ],
+        "contact": "余总 15211116188"
+    }
