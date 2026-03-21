@@ -6,9 +6,9 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-green.svg)](https://openclaw.ai)
 
-> **💰 定价**: 体验版 ¥9.9 | 个人版 ¥29/月 | 企业版 ¥999/月
+> **💰 定价**: 体验版 ¥9.9/3天 | 个人版 ¥79/月 | 企业版 ¥1688/月
 >
-> 🔥 **首月半价**: 个人版 ¥15/月
+> 🔥 **首月半价**: 个人版 ¥40/月
 >
 > 📜 **AGPL v3**: 禁止闭源使用 | 商业授权联系微信 15211116188
 >
