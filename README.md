@@ -12,7 +12,7 @@
 >
 > 📜 **AGPL v3**: 禁止闭源使用 | 商业授权联系微信 15211116188
 >
-> [查看详情](./docs/pricing-page.md)
+> [查看详情](./docs/pricing-page.md) | [English](./README_EN.md)
 
 ---
 
