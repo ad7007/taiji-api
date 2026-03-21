@@ -6,7 +6,11 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-green.svg)](https://openclaw.ai)
 
-> **💰 商业服务**: 专业版 ¥99/月 | 企业版 ¥999/月 | [查看详情](./docs/pricing-page.md)
+> **💰 商业服务**: 专业版 ¥99/月 | 企业版 ¥999/月 | 定制 ¥9999起
+>
+> 🔥 **限时早鸟价**: 专业版 ¥499/月（原价¥999）| 优惠码：MILO499
+>
+> [立即购买](./docs/pricing-page.md) | [在线演示](https://taiji.openclaw.ai)
 
 ---
 
