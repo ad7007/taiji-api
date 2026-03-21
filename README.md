@@ -6,9 +6,9 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-green.svg)](https://openclaw.ai)
 
-> **💰 亲民定价**: 个人版 ¥29/月 | 团队版 ¥99/月 | 企业版 ¥299/月
+> **💰 灵活定价**: 个人版 ¥29/月 | 团队版 ¥99/月 | 企业版 ¥999/月
 >
-> 🔥 **首月半价**: 个人版 ¥15/月 | 团队版 ¥50/月
+> 🔥 **首月半价**: 个人版 ¥15 | 团队版 ¥50
 >
 > [查看详情](./docs/pricing-page.md) | [联系购买](https://taiji.openclaw.ai)
 
