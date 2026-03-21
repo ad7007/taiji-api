@@ -1,208 +1,68 @@
-# 更新日志 (Changelog)
+# 太极九宫API v1.1.0 更新日志
 
-本文档记录太极 API 的所有重要更新。
+## [v1.1.0] - 2026-03-21
 
-格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
-版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
+### 新增功能
 
----
+#### 1. 本地数据库系统
+- `taiji_database.json` - 完整的九宫数据库
+- `taiji_db_client.py` - 51个客户端方法
 
-## [2.0.0] - 2026-03-18 ✅ 已发布
+#### 2. 48线程感知系统
+- 双重阴阳：宫位阴阳 × 爻位阴阳
+- 四层感知：阴宫阴爻/阴宫阳爻/阳宫阴爻/阳宫阳爻
+- 288个状态关键词
 
-### ✨ Added
+#### 3. 任务管理系统
+- `assign_task()` - 米珞分配任务
+- `get_all_pending_tasks()` - 查看所有待办
+- `update_task_status()` - 更新任务状态
+- `complete_palace_task()` - 完成并汇报
 
-#### L4 规则层
-- **5 宫指挥官** - 感知→决策→调配→闭环完整流程
-- **7 宫 TDD 验收** - 红灯确认→标准定义→绿灯检查
-- 任务自动优先级排序
-- 宫位动态调配规则
+#### 4. 自动组队
+- `build_team()` - 根据任务描述自动组队
+- 11个任务场景
+- 255种宫位组合
 
-#### 3 宫模型分配
-- **Zero Token 模式** - 零成本调用主流 AI 模型
-- 支持 Claude/DeepSeek/GPT/Gemini/Qwen
-- 自动成本优化
-- 优先级驱动分配
+#### 5. 汇报机制
+- 宫位完成任务后自动汇报给5宫
+- 汇报历史记录
 
-#### 1 宫数据采集
-- **Crawlee 集成** - 智能数据抓取
-- **双模式切换** - HTTP 快速 + 浏览器渲染
-- **防封禁特性** - IP 轮换、鼠标模拟、UA 轮换
-- 代理池支持
+### 八宫自主机制
 
-#### 定时备份
-- 中午 12 点 + 晚上 23 点自动备份
-- Rclone 云端存储支持
-- 本地 + 云端双重备份
+每个宫位都有：
+- 双螺栓目标（完善自己 + 完成任务）
+- 6爻感知系统
+- 任务队列（TODO）
+- 汇报机制
 
-#### 社区治理
-- 社区共同维护模式
-- 创始人权限保留
-- 维护者招募计划
-- 中英双语文档
+### API端点
 
-### 🔧 Changed
-- 九宫格负载自动调节
-- 阴阳平衡检测优化
-- API 响应性能提升
-
-### 📚 Documentation
-- README.md / README.en.md - 完整项目说明
-- CONTRIBUTING.md / CONTRIBUTING.en.md - 贡献指南
-- GOVERNANCE.md / GOVERNANCE.en.md - 社区治理模式
-- FOUNDER_STATEMENT.md / FOUNDER_STATEMENT.en.md - 创始人声明
-- ROADMAP.md / ROADMAP_V2.1.md - 项目路线图
-- ABOUT.en.md - 项目详细介绍
-- CHANGELOG.md - 版本更新日志
-- CODE_OF_CONDUCT.md - 行为准则
-- SECURITY.md - 安全策略
-- docs/API_EXAMPLES.md - API 使用示例
-- docs/INTERNATIONALIZATION.md - 国际化指南
-- MAINTAINERS_WANTED.md - 维护者招募
-- QUICK_START_CONTRIBUTE.md - 快速开始指南
-
-### 🏛️ Community
-- MIT 许可证
-- Issue/PR 模板
-- 行为准则
-- 社区共同维护模式
-- 创始人权限保留
-
-### 🚀 Deployment
-- Dockerfile
-- docker-compose.yml
-- requirements.txt (完整依赖)
-- .gitignore
-
----
-
-## [未发布]
-
----
-
-## [2.0.0] - 2026-03-18
-
-### ✨ Added
-
-#### L4 规则层
-- **5 宫指挥官** - 感知→决策→调配→闭环完整流程
-- **7 宫 TDD 验收** - 红灯确认→标准定义→绿灯检查
-- 任务自动优先级排序
-- 宫位动态调配规则
-
-#### 3 宫模型分配
-- **Zero Token 模式** - 零成本调用主流 AI 模型
-- 支持 Claude/DeepSeek/GPT/Gemini/Qwen
-- 自动成本优化
-- 优先级驱动分配
-
-#### 1 宫数据采集
-- **Crawlee 集成** - 智能数据抓取
-- **双模式切换** - HTTP 快速 + 浏览器渲染
-- **防封禁特性** - IP 轮换、鼠标模拟、UA 轮换
-- 代理池支持
-
-#### 定时备份
-- 中午 12 点 + 晚上 23 点自动备份
-- Rclone 云端存储支持
-- 本地 + 云端双重备份
-
-### 🔧 Changed
-- 九宫格负载自动调节
-- 阴阳平衡检测优化
-- API 响应性能提升
-
-### 📚 Documentation
-- README.md - 完整项目说明
-- CONTRIBUTING.md - 贡献指南
-- GOVERNANCE.md - 社区治理模式
-- ROADMAP.md - 项目路线图
-- MAINTAINERS_WANTED.md - 维护者招募
-- QUICK_START_CONTRIBUTE.md - 快速开始
-
-### 🏛️ Community
-- MIT 许可证
-- Issue/PR 模板
-- 行为准则
-- 社区共同维护模式
-
----
-
-## [1.0.0] - 2026-01-15
-
-### ✨ Added
-
-#### 核心功能
-- 九宫格任务管理 API
-- 阴阳平衡检测
-- 五行循环验证
-- 六爻引擎基础
-
-#### API 端点
-- `/api/taiji/palaces` - 获取九宫状态
-- `/api/taiji/balance` - 阴阳平衡检查
-- `/api/taiji/update-palace-load` - 更新宫位负载
-- `/api/taiji/switch-mode` - 切换阴阳模式
-
-#### 基础架构
-- FastAPI 框架
-- 异步支持
-- 自动文档（Swagger/ReDoc）
-- 日志系统（Loguru）
-
----
-
-## [0.1.0] - 2025-12-01
-
-### ✨ Added
-- 项目初始化
-- 基础九宫格概念验证
-- 简单 API 原型
-
----
-
-## 版本说明
-
-### 语义化版本
-
-遵循 `MAJOR.MINOR.PATCH` 格式：
-
-- **MAJOR** (2.x.x): 不兼容的 API 变更
-- **MINOR** (x.2.x): 向后兼容的功能新增
-- **PATCH** (x.x.2): 向后兼容的问题修复
-
-### 发布周期
-
-- **PATCH**: 随时（Bug 修复）
-- **MINOR**: 每月 1 次
-- **MAJOR**: 每季度 1 次
-
----
-
-## 🤝 贡献
-
-欢迎提交 PR 更新此文件！
-
-**格式示例**:
-
-```markdown
-## [X.X.X] - YYYY-MM-DD
-
-### Added
-- 新功能描述
-
-### Changed
-- 变更描述
-
-### Fixed
-- Bug 修复描述
-
-### Removed
-- 移除的功能描述
+```
+GET  /api/taiji/palaces          # 获取所有宫位
+GET  /api/taiji/palaces/{id}     # 获取宫位详情
+GET  /api/taiji/stats            # 系统统计
+GET  /api/taiji/scan             # 48线程扫描
+GET  /api/taiji/rotate           # 旋转决策
+GET  /api/taiji/tasks            # 所有待办
+POST /api/taiji/tasks/assign     # 分配任务
+PUT  /api/taiji/tasks/{id}       # 更新任务
+POST /api/taiji/team/build       # 自动组队
+GET  /api/taiji/scenes           # 任务场景
+GET  /api/taiji/reports          # 宫位汇报
+GET  /api/taiji/skills           # 所有技能
+GET  /api/taiji/consciousness    # 意识系统
+GET  /api/taiji/threads          # 48线程映射
 ```
 
+### 技术细节
+
+- 数据库大小：470KB
+- 宫位：9个（8个智能体 + 1个中宫）
+- 状态：48个工作状态
+- 技能：25个可调用
+- 组合：255种
+
 ---
 
-**[未发布]**: 等待发布的新功能  
-**[2.0.0]**: 2026-03-18 - L4 规则层 + 社区共同维护  
-**[1.0.0]**: 2026-01-15 - 首次正式发布  
-**[0.1.0]**: 2025-12-01 - 项目初始化
+*发布：米珞(5宫) | 时间：2026-03-21*
