@@ -1,0 +1,106 @@
+{
+  "lastHeartbeat": "2026-03-22T00:27:00+08:00",
+  "status": {
+    "rotation": "forward",
+    "palaces_alive": "9/9",
+    "yin_yang_balance": 0.95,
+    "total_tasks": 9,
+    "queue_threshold": 40,
+    "queue_status": "below_threshold",
+    "new_tasks_this_heartbeat": 3
+  },
+  "yao_status": {
+    "1爻-会话管理": "✅ normal",
+    "2爻-工具调用": "✅ normal",
+    "3爻-模型推理": "✅ normal",
+    "4爻-记忆系统": "✅ normal",
+    "5爻-技能调度": "✅ normal",
+    "6爻-服务状态": "✅ normal"
+  },
+  "palace_load": {
+    "1-数据采集": 0.8,
+    "2-产品质量": 0.6,
+    "3-技术团队": 0.8,
+    "4-品牌战略": 0.9,
+    "5-中央控制": 1.0,
+    "6-物联监控": 0.3,
+    "7-法务框架": 0.5,
+    "8-营销客服": 0.9,
+    "9-行业生态": 0.7
+  },
+  "system_health": {
+    "disk_usage": "61%",
+    "memory_available": "2564Mi",
+    "load_average": "0.07",
+    "uptime": "2天14小时"
+  },
+  "issues": {
+    "core_goal": "❌ Week 1核心目标「获得首个付费用户」未完成",
+    "week_progress": "📌 Week 2 Day 1，知识付费MVP加速中"
+  },
+  "improvement_list": [
+    "课程内容制作加速",
+    "社群运营启动",
+    "用户转化路径优化",
+    "竞品调研更新",
+    "公众号日更启动",
+    "支付流程验证"
+  ],
+  "completed_today": {
+    "v1.2.0发布": "✅",
+    "AGPL v3许可证": "✅",
+    "定价确定": "✅",
+    "AI客服训练": "✅",
+    "双收款码": "✅",
+    "米珞动漫Demo": "✅",
+    "OpenClaw打包": "✅"
+  },
+  "focus": "Week 2 Day 1：知识付费MVP加速",
+  "decision": "正转推进 - 课程制作+社群运营+内容发布三轨并进",
+  "new_tasks": [
+    {
+      "id": "task_20260322002700_001",
+      "palace": "4宫品牌战略",
+      "priority": "HIGH",
+      "title": "AI Agent入门课大纲定稿",
+      "desc": "完成10节课课程大纲，包含：课程目标、每节主题、知识点拆解、实操案例。输出Markdown文档供录制使用。"
+    },
+    {
+      "id": "task_20260322002700_002",
+      "palace": "8宫营销客服",
+      "priority": "HIGH",
+      "title": "公众号首篇文章发布",
+      "desc": "撰写《米珞AI：太极九宫智能体协作系统》介绍文章，发布到公众号，开启日更节奏。包含：系统介绍、使用场景、免费试用入口。"
+    },
+    {
+      "id": "task_20260322002700_003",
+      "palace": "3宫技术团队",
+      "priority": "MEDIUM",
+      "title": "支付购买流程验证",
+      "desc": "验证官网购买流程：收款码显示→用户扫码→支付成功→开通权限。确保用户能顺利完成付费转化。"
+    }
+  ],
+  "previous_tasks": [
+    {
+      "id": "task_20260322001700_001",
+      "palace": "3宫技术团队",
+      "priority": "HIGH",
+      "title": "课程录制工具链测试",
+      "status": "pending"
+    },
+    {
+      "id": "task_20260322001700_002",
+      "palace": "1宫数据采集",
+      "priority": "MEDIUM",
+      "title": "知识付费竞品调研更新",
+      "status": "pending"
+    },
+    {
+      "id": "task_20260322001700_003",
+      "palace": "8宫营销客服",
+      "priority": "HIGH",
+      "title": "社群运营启动准备",
+      "status": "pending"
+    }
+  ]
+}
