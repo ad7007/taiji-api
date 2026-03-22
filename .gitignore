@@ -1,2 +1,25 @@
-.clawcities_api_key
+# 不备份的文件
+node_modules/
+*.log
+*.tmp
+.cache/
+sessions/
+*.sqlite
+*.db
+.env
+.env.*
+*.key
+*.pem
+credentials/
+
+# 大文件
+*.mp4
+*.mp3
+*.wav
+*.zip
+*.tar.gz
+
+# 临时文件
 -o
+.clawcities_api_key
+.memory-chain.json

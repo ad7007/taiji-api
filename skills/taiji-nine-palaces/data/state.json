@@ -1,0 +1,34 @@
+{
+  "nodes": {
+    "yin": {
+      "type": "yin",
+      "value": 0.5,
+      "connections": [
+        "yang"
+      ]
+    },
+    "yang": {
+      "type": "yang",
+      "value": 0.5,
+      "connections": [
+        "yin"
+      ]
+    },
+    "7-tdd": {
+      "type": "methodology",
+      "value": 0.95,
+      "connections": []
+    }
+  },
+  "edges": {
+    "yin-yang": {
+      "source": "yin",
+      "target": "yang",
+      "strength": 0.8
+    }
+  },
+  "metadata": {
+    "last_updated": "2026-03-18T09:58:03.242512",
+    "version": "1.0.0"
+  }
+}

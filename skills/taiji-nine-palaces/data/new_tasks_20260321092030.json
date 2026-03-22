@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-03-21T09:19:00+08:00",
+  "source": "太极心跳任务生成",
+  "new_tasks": [
+    {
+      "id": "task_20260321091900_001",
+      "title": "【营销客服】制作太极API产品演示视频，突出九宫协作核心价值",
+      "palace": 8,
+      "team": [4, 8, 5],
+      "complexity": "standard",
+      "priority": "CRITICAL",
+      "source": "Power.md Week 1核心目标-获得首个付费用户",
+      "tdd_standard": "演示视频发布到B站/视频号，获得至少50播放量",
+      "description": "制作3分钟产品演示视频，展示：1)米珞一句话创建任务 2)自动组队执行 3)TDD验收闭环。用于技术社区推广和官网展示"
+    },
+    {
+      "id": "task_20260321091900_002",
+      "title": "【数据采集】采集知识付费平台定价数据（小报童/知识星球/得道）",
+      "palace": 1,
+      "team": [1, 4, 5],
+      "complexity": "standard",
+      "priority": "HIGH",
+      "source": "Power.md Week 2知识付费MVP准备",
+      "tdd_standard": "输出竞品定价对比表，包含：产品名、价格、内容形式、用户规模",
+      "description": "调研知识付费平台（小报童、知识星球、得道、极客时间）的课程定价和变现模式，为AI入门课定价提供数据支撑"
+    },
+    {
+      "id": "task_20260321091900_003",
+      "title": "【品牌战略】设计AI入门课大纲（10节），定位程序员Agent开发实战",
+      "palace": 4,
+      "team": [4, 8, 5],
+      "complexity": "standard",
+      "priority": "HIGH",
+      "source": "Power.md Week 2知识付费MVP-录制入门课",
+      "tdd_standard": "课程大纲完成，包含每节课主题、时长、实操案例",
+      "description": "设计AI Agent开发入门课大纲，目标用户为程序员，包含：环境搭建、API调用、任务调度、TDD验收等实战内容"
+    },
+    {
+      "id": "task_20260321091900_004",
+      "title": "【技术团队】部署米珞《AI星球》短剧素材库，整理免版税资源",
+      "palace": 3,
+      "team": [1, 3, 5],
+      "complexity": "simple",
+      "priority": "MEDIUM",
+      "source": "Power.md Week 3-4短剧试水准备",
+      "tdd_standard": "素材库创建完成，包含：背景音乐、音效、过渡动画、字体清单",
+      "description": "整理AI短剧制作所需的免费素材资源：免版税BGM、音效库、过渡动画模板、可商用字体清单"
+    }
+  ],
+  "task_distribution": {
+    "by_palace": {
+      "1": 1,
+      "3": 1,
+      "4": 1,
+      "8": 1
+    },
+    "by_priority": {
+      "CRITICAL": 1,
+      "HIGH": 2,
+      "MEDIUM": 1
+    }
+  },
+  "notes": [
+    "聚焦Power.md Week 1核心目标：获得首个付费用户 - 生成演示视频任务",
+    "提前准备Week 2知识付费MVP - 生成竞品调研+课程大纲任务",
+    "Week 3-4短剧前置准备 - 生成素材库整理任务",
+    "本次心跳生成4个新任务，覆盖4个宫位：1/3/4/8",
+    "系统正转状态，优先执行CRITICAL级任务"
+  ]
+}

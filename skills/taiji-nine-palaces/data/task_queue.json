@@ -1,0 +1,32 @@
+[
+  {
+    "id": "task_20260321210700_001",
+    "palace": 8,
+    "palace_name": "营销客服",
+    "priority": "CRITICAL",
+    "status": "pending",
+    "title": "周六夜最后冲刺：技术社群精准推广",
+    "description": "AI开发者社群精准投放（掘金/V2EX/CSDN），早鸟价¥499，优惠码MILO499，今夜23:59截止",
+    "created_at": "2026-03-21T21:07:00+08:00"
+  },
+  {
+    "id": "task_20260321210700_002",
+    "palace": 3,
+    "palace_name": "技术团队",
+    "priority": "HIGH",
+    "status": "pending",
+    "title": "极速部署在线体验Demo",
+    "description": "HuggingFace Spaces免费托管太极API Demo，5分钟体验九宫协作，降低试用门槛",
+    "created_at": "2026-03-21T21:07:00+08:00"
+  },
+  {
+    "id": "task_20260321210700_003",
+    "palace": 5,
+    "palace_name": "中央控制",
+    "priority": "HIGH",
+    "status": "pending",
+    "title": "主动触达高意向用户转化",
+    "description": "提供一对一技术咨询+专属体验账号+限时优惠码MILO499",
+    "created_at": "2026-03-21T21:07:00+08:00"
+  }
+]

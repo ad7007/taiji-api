@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "skills": {
+    "ai-pdf-builder": {
+      "name": "Ai Pdf Builder",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=ai-pdf-builder",
+      "source": "skillhub",
+      "version": "1.2.3"
+    },
+    "zero-trust": {
+      "name": "Zero Trust",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=zero-trust",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "wechat-publisher": {
+      "name": "Wechat Publisher",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=wechat-publisher",
+      "source": "skillhub",
+      "version": "0.1.0"
+    },
+    "marketing-strategy-pmm": {
+      "name": "Marketing Strategy Pmm",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=marketing-strategy-pmm",
+      "source": "skillhub",
+      "version": "2.1.1"
+    },
+    "web-pilot": {
+      "name": "Web Pilot",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=web-pilot",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "constant-contact": {
+      "name": "Constant Contact",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=constant-contact",
+      "source": "skillhub",
+      "version": "1.0.3"
+    },
+    "chargebee": {
+      "name": "Chargebee",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=chargebee",
+      "source": "skillhub",
+      "version": "1.0.5"
+    },
+    "x-post-automation": {
+      "name": "X(Twitter) Post Automation",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=x-post-automation",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "keyword-research": {
+      "name": "Keyword Research",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=keyword-research",
+      "source": "skillhub",
+      "version": "3.0.0"
+    },
+    "n8n-workflow-automation": {
+      "name": "n8n workflow automation",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=n8n-workflow-automation",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "research-assistant": {
+      "name": "Research Assistant",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=research-assistant",
+      "source": "skillhub",
+      "version": "1.0.1"
+    },
+    "dory-memory": {
+      "name": "Dory-Proof Memory System",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=dory-memory",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "loom-workflow": {
+      "name": "Loom Workflow",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=loom-workflow",
+      "source": "skillhub",
+      "version": "1.0.1"
+    },
+    "links-to-pdfs": {
+      "name": "Links to PDFs",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=links-to-pdfs",
+      "source": "skillhub",
+      "version": "0.0.1"
+    },
+    "academic-writing-refiner": {
+      "name": "academic-writing-refiner",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=academic-writing-refiner",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "secops-by-joes": {
+      "name": "A SecOps expert to handle security issues, ensure that protections are in place and collect evidence for security analysis. The Skill also contains skill integrity checks.",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=secops-by-joes",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "skillsign": {
+      "name": "Skillsign — ed25519 Skill Signing",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=skillsign",
+      "source": "skillhub",
+      "version": "1.1.0"
+    },
+    "agent-swarm-workflow": {
+      "name": "Agent Swarm Workflow",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=agent-swarm-workflow",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "composio-integration": {
+      "name": "Composio Integration",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=composio-integration",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "clawdirect": {
+      "name": "ClawDirect",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=clawdirect",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "plane": {
+      "name": "Plane.so",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=plane",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "ez-unifi": {
+      "name": "EZ Unifi",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=ez-unifi",
+      "source": "skillhub",
+      "version": "1.0.1"
+    },
+    "emporia-energy": {
+      "name": "Emporia Energy",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=emporia-energy",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "video-summary": {
+      "name": "Video Summary",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=video-summary",
+      "source": "skillhub",
+      "version": "1.6.4"
+    },
+    "douyin-download": {
+      "name": "douyin-download",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=douyin-download",
+      "source": "skillhub",
+      "version": "1.2.0"
+    },
+    "self-improving-agent-cn": {
+      "name": "Self Improving Agent CN",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=self-improving-agent-cn",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "playwright-scraper-skill": {
+      "name": "Playwright Scraper Skill",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=playwright-scraper-skill",
+      "source": "skillhub",
+      "version": "1.2.0"
+    },
+    "clawboss": {
+      "name": "ClawBoss - AI Productivity Coach",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=clawboss",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "agent-identity-kit": {
+      "name": "Agent Identity Kit",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=agent-identity-kit",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "macos-calendar": {
+      "name": "macOS Calendar",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=macos-calendar",
+      "source": "skillhub",
+      "version": "1.2.0"
+    },
+    "mac-reminders-agent": {
+      "name": "Mac Reminders Agent",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=mac-reminders-agent",
+      "source": "skillhub",
+      "version": "1.4.0"
+    },
+    "claw-backup": {
+      "name": "Claw Backup",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=claw-backup",
+      "source": "skillhub",
+      "version": "1.0.7"
+    }
+  }
+}

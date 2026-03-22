@@ -1,0 +1,44 @@
+[
+  {
+    "id": "task_20260321174700_001",
+    "palace": 8,
+    "status": "pending",
+    "priority": "CRITICAL",
+    "desc": "发布太极API早鸟价推广到技术社群（掘金/V2EX），含优惠码"
+  },
+  {
+    "id": "task_20260321174700_002",
+    "palace": 3,
+    "status": "pending",
+    "priority": "HIGH",
+    "desc": "完成太极API Quick Start Demo视频剪辑与配音"
+  },
+  {
+    "id": "task_20260321174700_003",
+    "palace": 4,
+    "status": "pending",
+    "priority": "HIGH",
+    "desc": "撰写《为什么选择太极API而非LangChain》对比文章"
+  },
+  {
+    "id": "task_20260321173600_001",
+    "palace": 8,
+    "status": "in_progress",
+    "priority": "CRITICAL",
+    "desc": "发布太极API早鸟价推广文案到朋友圈"
+  },
+  {
+    "id": "task_20260321173600_002",
+    "palace": 3,
+    "status": "pending",
+    "priority": "HIGH",
+    "desc": "录制太极API Quick Start Demo视频"
+  },
+  {
+    "id": "task_20260321173600_003",
+    "palace": 6,
+    "status": "pending",
+    "priority": "MEDIUM",
+    "desc": "配置官网访问统计与转化漏斗监控"
+  }
+]

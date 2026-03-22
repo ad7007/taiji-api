@@ -1,0 +1,142 @@
+{
+  "task_counter": 8,
+  "created_time": "2026-03-21T00:07:16.535127",
+  "saved_time": "2026-03-21T00:07:16.535326",
+  "queues": {
+    "1": {
+      "palace_name": "数据采集",
+      "tasks": [
+        {
+          "task_id": "task_0004",
+          "title": "设计数据约束规范（上六爻）",
+          "status": "pending",
+          "priority": 2,
+          "source": "taiji_md",
+          "created_time": "2026-03-21T00:07:16.535245",
+          "result": null
+        }
+      ]
+    },
+    "2": {
+      "palace_name": "物联产品",
+      "tasks": [
+        {
+          "task_id": "auto_2_20260321000716",
+          "title": "优化产品体验",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-21T00:07:16.535303",
+          "result": null
+        }
+      ]
+    },
+    "3": {
+      "palace_name": "技术团队",
+      "tasks": [
+        {
+          "task_id": "task_0002",
+          "title": "实现线程阴阳度量系统",
+          "status": "pending",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-21T00:07:16.535224",
+          "result": null
+        }
+      ]
+    },
+    "4": {
+      "palace_name": "品牌战略",
+      "tasks": [
+        {
+          "task_id": "task_0005",
+          "title": "分析太极系统市场定位",
+          "status": "pending",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-21T00:07:16.535253",
+          "result": null
+        }
+      ]
+    },
+    "5": {
+      "palace_name": "中央控制",
+      "tasks": [
+        {
+          "task_id": "task_0003",
+          "title": "建立双螺栓目标追踪机制",
+          "status": "pending",
+          "priority": 0,
+          "source": "taiji_md",
+          "created_time": "2026-03-21T00:07:16.535236",
+          "result": null
+        },
+        {
+          "task_id": "task_0001",
+          "title": "完善24线程天地对接协议实现",
+          "status": "pending",
+          "priority": 1,
+          "source": "taiji_md",
+          "created_time": "2026-03-21T00:07:16.535203",
+          "result": null
+        }
+      ]
+    },
+    "6": {
+      "palace_name": "质量监控",
+      "tasks": [
+        {
+          "task_id": "task_0006",
+          "title": "建立系统健康监控Dashboard",
+          "status": "pending",
+          "priority": 1,
+          "source": "self",
+          "created_time": "2026-03-21T00:07:16.535260",
+          "result": null
+        }
+      ]
+    },
+    "7": {
+      "palace_name": "法务框架",
+      "tasks": [
+        {
+          "task_id": "task_0008",
+          "title": "审查开源协议合规性",
+          "status": "pending",
+          "priority": 3,
+          "source": "self",
+          "created_time": "2026-03-21T00:07:16.535274",
+          "result": null
+        }
+      ]
+    },
+    "8": {
+      "palace_name": "营销客服",
+      "tasks": [
+        {
+          "task_id": "auto_8_20260321000716",
+          "title": "生成知识内容",
+          "status": "pending",
+          "priority": 3,
+          "source": "auto",
+          "created_time": "2026-03-21T00:07:16.535320",
+          "result": null
+        }
+      ]
+    },
+    "9": {
+      "palace_name": "行业生态",
+      "tasks": [
+        {
+          "task_id": "task_0007",
+          "title": "研究生成式AI行业生态趋势",
+          "status": "pending",
+          "priority": 2,
+          "source": "explore",
+          "created_time": "2026-03-21T00:07:16.535267",
+          "result": null
+        }
+      ]
+    }
+  }
+}

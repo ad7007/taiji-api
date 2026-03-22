@@ -1,0 +1,771 @@
+{
+  "task_0194": {
+    "task_id": "task_0194",
+    "title": "【数据采集】抓取竞品AI Agent产品定价信息",
+    "scene": "scrape",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T21:02:56.616060",
+    "flow_index": 0
+  },
+  "task_0195": {
+    "task_id": "task_0195",
+    "title": "【品牌战略】撰写太极系统开源发布计划",
+    "scene": "brand",
+    "complexity": "complex",
+    "team": [
+      5,
+      1,
+      2,
+      4,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T21:02:56.616632",
+    "flow_index": 0
+  },
+  "task_0196": {
+    "task_id": "task_0196",
+    "title": "【技术团队】优化本地模型推理性能",
+    "scene": "code",
+    "complexity": "complex",
+    "team": [
+      5,
+      1,
+      2,
+      3,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T21:02:56.617475",
+    "flow_index": 0
+  },
+  "task_0197": {
+    "task_id": "task_0197",
+    "title": "【营销客服】整理客户反馈FAQ文档",
+    "scene": "content",
+    "complexity": "standard",
+    "team": [
+      2,
+      5,
+      8
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T21:02:56.618080",
+    "flow_index": 0
+  },
+  "task_0198": {
+    "task_id": "task_0198",
+    "title": "【生态】探索与开源社区合作机会",
+    "scene": "ecology",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T21:02:56.618886",
+    "flow_index": 0
+  },
+  "task_0199": {
+    "task_id": "task_0199",
+    "title": "【物联监控】建立太极API健康检查监控面板",
+    "scene": "monitor",
+    "complexity": "standard",
+    "team": [
+      5,
+      6,
+      3
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T22:03:00.000000",
+    "flow_index": 0
+  },
+  "task_0200": {
+    "task_id": "task_0200",
+    "title": "【法务框架】起草太极系统开源协议与免责声明",
+    "scene": "legal",
+    "complexity": "complex",
+    "team": [
+      5,
+      7,
+      4
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T22:03:00.000000",
+    "flow_index": 0
+  },
+  "task_0201": {
+    "task_id": "task_0201",
+    "title": "【物联监控】实现48端状态实时告警机制",
+    "scene": "monitor",
+    "complexity": "standard",
+    "team": [
+      5,
+      6,
+      1
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T22:03:00.000000",
+    "flow_index": 0
+  },
+  "task_0202": {
+    "task_id": "task_0202",
+    "title": "【法务框架】整理AI Agent服务条款与隐私政策模板",
+    "scene": "legal",
+    "complexity": "standard",
+    "team": [
+      5,
+      7,
+      8
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T22:03:00.000000",
+    "flow_index": 0
+  },
+  "task_0203": {
+    "task_id": "task_0203",
+    "title": "【中央控制】实现相生相克五行循环引擎",
+    "scene": "core",
+    "complexity": "complex",
+    "team": [
+      5,
+      3,
+      1
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T23:06:10.827130",
+    "flow_index": 0
+  },
+  "task_0204": {
+    "task_id": "task_0204",
+    "title": "【技术团队】完善N宫组合决策算法",
+    "scene": "code",
+    "complexity": "complex",
+    "team": [
+      5,
+      3,
+      7
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T23:06:10.827146",
+    "flow_index": 0
+  },
+  "task_0205": {
+    "task_id": "task_0205",
+    "title": "【数据采集】采集AI Agent行业定价数据更新",
+    "scene": "scrape",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      4
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T23:06:10.827149",
+    "flow_index": 0
+  },
+  "task_0206": {
+    "task_id": "task_0206",
+    "title": "【营销客服】撰写企业版销售话术与案例",
+    "scene": "content",
+    "complexity": "standard",
+    "team": [
+      5,
+      8,
+      4
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T23:06:10.827151",
+    "flow_index": 0
+  },
+  "task_0207": {
+    "task_id": "task_0207",
+    "title": "【生态】探索开源社区变现渠道与合作模式",
+    "scene": "ecology",
+    "complexity": "complex",
+    "team": [
+      5,
+      9,
+      4
+    ],
+    "status": "created",
+    "created_at": "2026-03-20T23:06:10.827153",
+    "flow_index": 0
+  },
+  "task_20260321010902_001": {
+    "task_id": "task_20260321010902_001",
+    "title": "开发2宫产品质量能力模块",
+    "scene": "code",
+    "complexity": "high",
+    "team": [
+      3,
+      5,
+      7
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T01:09:02.685092",
+    "flow_index": 0
+  },
+  "task_20260321010902_002": {
+    "task_id": "task_20260321010902_002",
+    "title": "开发7宫法务框架能力模块",
+    "scene": "code",
+    "complexity": "high",
+    "team": [
+      3,
+      5,
+      7
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T01:09:02.685668",
+    "flow_index": 0
+  },
+  "task_20260321010902_003": {
+    "task_id": "task_20260321010902_003",
+    "title": "开发9宫行业生态能力模块",
+    "scene": "code",
+    "complexity": "high",
+    "team": [
+      3,
+      5,
+      7
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T01:09:02.686697",
+    "flow_index": 0
+  },
+  "task_20260321010902_004": {
+    "task_id": "task_20260321010902_004",
+    "title": "实现相生循环调度器",
+    "scene": "code",
+    "complexity": "standard",
+    "team": [
+      3,
+      5,
+      7
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T01:09:02.687657",
+    "flow_index": 0
+  },
+  "task_20260321010902_005": {
+    "task_id": "task_20260321010902_005",
+    "title": "完善24线程天地对接协议",
+    "scene": "code",
+    "complexity": "standard",
+    "team": [
+      3,
+      5,
+      7
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T01:09:02.688223",
+    "flow_index": 0
+  },
+  "task_20260321031146_001": {
+    "task_id": "task_20260321031146_001",
+    "title": "【技术团队】实现24线程阴阳度量计算引擎",
+    "scene": "code",
+    "complexity": "complex",
+    "team": [
+      5,
+      1,
+      2,
+      3,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T03:11:46.654145",
+    "flow_index": 0
+  },
+  "task_20260321031146_002": {
+    "task_id": "task_20260321031146_002",
+    "title": "【数据采集】采集AI Agent市场竞品定价数据",
+    "scene": "scrape",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T03:11:46.656580",
+    "flow_index": 0
+  },
+  "task_20260321031146_003": {
+    "task_id": "task_20260321031146_003",
+    "title": "【品牌战略】撰写太极系统品牌定位白皮书草案",
+    "scene": "brand",
+    "complexity": "complex",
+    "team": [
+      5,
+      1,
+      2,
+      4,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T03:11:46.657517",
+    "flow_index": 0
+  },
+  "task_20260321031146_004": {
+    "task_id": "task_20260321031146_004",
+    "title": "【营销客服】开发企业版客户案例库",
+    "scene": "content",
+    "complexity": "standard",
+    "team": [
+      2,
+      5,
+      8
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T03:11:46.658090",
+    "flow_index": 0
+  },
+  "task_20260321031146_005": {
+    "task_id": "task_20260321031146_005",
+    "title": "【生态】调研开源AI Agent变现模式",
+    "scene": "ecology",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T03:11:46.659057",
+    "flow_index": 0
+  },
+  "task_20260321041358_001": {
+    "id": "task_20260321041358_001",
+    "title": "【质量监控】实现感知系统阴端收敛机制",
+    "palace": 6,
+    "team": [
+      1,
+      2,
+      5,
+      6
+    ],
+    "complexity": "complex",
+    "source": "Taiji.md 感知输入端（阴 - 收敛）",
+    "description": "实现感知输入端的数据接收、存储、过滤机制，覆盖数据采集(1)、物联产品(2)、营销客服(8)、质量监控(6)四个阴端宫位",
+    "status": "created",
+    "created_at": "2026-03-21T04:13:58.901411",
+    "flow_index": 0
+  },
+  "task_20260321041358_002": {
+    "id": "task_20260321041358_002",
+    "title": "【法务框架】开发TDD验收标准模板库",
+    "palace": 7,
+    "team": [
+      3,
+      5,
+      7
+    ],
+    "complexity": "standard",
+    "source": "双螺栓目标-完善太极系统 + TDD验收",
+    "description": "为太极系统各宫位开发TDD验收标准模板，支持红灯确认→定义标准→执行→绿灯检查→交付闭环",
+    "status": "created",
+    "created_at": "2026-03-21T04:13:58.901421",
+    "flow_index": 0
+  },
+  "task_20260321041358_003": {
+    "id": "task_20260321041358_003",
+    "title": "【技术团队】实现相生循环调度引擎",
+    "palace": 3,
+    "team": [
+      3,
+      5,
+      9
+    ],
+    "complexity": "complex",
+    "source": "Taiji.md 相生循环路径",
+    "description": "实现战略(9)→产品(2)→技术(3)→质量(6)→客户(1)→数据(7)→营销(8)→生态(9)的循环调度引擎",
+    "status": "created",
+    "created_at": "2026-03-21T04:13:58.901425",
+    "flow_index": 0
+  },
+  "task_20260321041358_004": {
+    "id": "task_20260321041358_004",
+    "title": "【产品质量】建立技术vs质量制衡指标体系",
+    "palace": 2,
+    "team": [
+      2,
+      3,
+      5,
+      6
+    ],
+    "complexity": "standard",
+    "source": "Taiji.md 相克制衡关系",
+    "description": "建立技术(3)与质量(6)之间的制衡指标，解决快速交付压力与质量保障的博弈问题",
+    "status": "created",
+    "created_at": "2026-03-21T04:13:58.901428",
+    "flow_index": 0
+  },
+  "task_20260321041358_005": {
+    "id": "task_20260321041358_005",
+    "title": "【中央控制】开发中宫阴阳平衡监控面板",
+    "palace": 5,
+    "team": [
+      5,
+      6
+    ],
+    "complexity": "standard",
+    "source": "双螺栓目标-完善太极系统",
+    "description": "开发5宫中宫的阴阳平衡实时监控面板，展示9宫负载分布和阴阳平衡状态",
+    "status": "created",
+    "created_at": "2026-03-21T04:13:58.901431",
+    "flow_index": 0
+  },
+  "task_20260321122609_001": {
+    "task_id": "task_20260321122609_001",
+    "title": "【营销客服】制作太极API快速上手指南",
+    "scene": "content",
+    "complexity": "standard",
+    "team": [
+      2,
+      5,
+      8
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T12:26:09.131031",
+    "flow_index": 0
+  },
+  "task_20260321122609_002": {
+    "task_id": "task_20260321122609_002",
+    "title": "【营销客服】录制AI Agent入门课第1集",
+    "scene": "content",
+    "complexity": "standard",
+    "team": [
+      2,
+      5,
+      8
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T12:26:09.132266",
+    "flow_index": 0
+  },
+  "task_20260321122609_003": {
+    "task_id": "task_20260321122609_003",
+    "title": "【技术团队】优化太极API支付流程体验",
+    "scene": "code",
+    "complexity": "standard",
+    "team": [
+      3,
+      5,
+      7
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T12:26:09.134219",
+    "flow_index": 0
+  },
+  "task_20260321154437_001": {
+    "task_id": "task_20260321154437_001",
+    "title": "【数据采集】调研AI Agent市场付费转化率数据",
+    "scene": "research",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T15:44:37.289173",
+    "flow_index": 0
+  },
+  "task_20260321154437_002": {
+    "task_id": "task_20260321154437_002",
+    "title": "【营销客服】设计太极API限时优惠活动",
+    "scene": "brand",
+    "complexity": "standard",
+    "team": [
+      4,
+      5,
+      6
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T15:44:37.289926",
+    "flow_index": 0
+  },
+  "task_20260321154437_003": {
+    "task_id": "task_20260321154437_003",
+    "title": "【品牌战略】撰写太极API用户案例",
+    "scene": "brand",
+    "complexity": "standard",
+    "team": [
+      4,
+      5,
+      6
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T15:44:37.290967",
+    "flow_index": 0
+  },
+  "task_20260321155624_001": {
+    "task_id": "task_20260321155624_001",
+    "title": "【数据采集】调研AI Agent竞品付费功能亮点与定价策略",
+    "scene": "scrape",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T15:56:24.647635",
+    "flow_index": 0,
+    "priority": "HIGH",
+    "source": "Power.md Week 1 - 获得首个付费用户"
+  },
+  "task_20260321155624_002": {
+    "task_id": "task_20260321155624_002",
+    "title": "【营销客服】设计限时早鸟价优惠方案（原价¥999→¥499/月）",
+    "scene": "brand",
+    "complexity": "standard",
+    "team": [
+      4,
+      5,
+      8
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T15:56:24.647643",
+    "flow_index": 0,
+    "priority": "CRITICAL",
+    "source": "Power.md Week 1 - 付费转化"
+  },
+  "task_20260321155624_003": {
+    "task_id": "task_20260321155624_003",
+    "title": "【品牌战略】撰写成功案例文章《如何用太极API提升10倍开发效率》",
+    "scene": "content",
+    "complexity": "standard",
+    "team": [
+      4,
+      5,
+      8
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T15:56:24.647645",
+    "flow_index": 0,
+    "priority": "HIGH",
+    "source": "Power.md Week 1 - 技术博客引流"
+  },
+  "check_5_yao_20260321160831": {
+    "task_id": "check_5_yao_20260321160831",
+    "title": "检查5宫六爻状态",
+    "scene": "check",
+    "complexity": "simple",
+    "team": [
+      8,
+      2
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T16:08:31.174969",
+    "flow_index": 0
+  },
+  "check_48_threads_20260321160831": {
+    "task_id": "check_48_threads_20260321160831",
+    "title": "扫描48线程8宫状态",
+    "scene": "check",
+    "complexity": "simple",
+    "team": [
+      8,
+      2
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T16:08:31.175832",
+    "flow_index": 0
+  },
+  "build_improve_list_20260321160831": {
+    "task_id": "build_improve_list_20260321160831",
+    "title": "建立系统预改善清单",
+    "scene": "create",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T16:08:31.176624",
+    "flow_index": 0
+  },
+  "market_research_20260321160831": {
+    "task_id": "market_research_20260321160831",
+    "title": "AI智能体市场数据调查",
+    "scene": "scrape",
+    "complexity": "complex",
+    "team": [
+      5,
+      1,
+      2,
+      3,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T16:08:31.178321",
+    "flow_index": 0
+  },
+  "early_bird_promo_20260321160831": {
+    "task_id": "early_bird_promo_20260321160831",
+    "title": "太极API早鸟价优惠方案",
+    "scene": "create",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T16:08:31.179426",
+    "flow_index": 0
+  },
+  "success_case_article_20260321160831": {
+    "task_id": "success_case_article_20260321160831",
+    "title": "成功案例文章撰写",
+    "scene": "create",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T16:08:31.180267",
+    "flow_index": 0
+  },
+  "task_20260321163600_001": {
+    "task_id": "task_20260321163600_001",
+    "title": "调研AI Agent竞品付费用户转化率数据",
+    "scene": "research",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T16:38:00.852397",
+    "flow_index": 0
+  },
+  "task_20260321163600_002": {
+    "task_id": "task_20260321163600_002",
+    "title": "设计太极API限时早鸟价活动方案（¥999→¥499/月，限前50名）",
+    "scene": "brand",
+    "complexity": "standard",
+    "team": [
+      4,
+      5,
+      6
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T16:38:00.853298",
+    "flow_index": 0
+  },
+  "task_20260321163600_003": {
+    "task_id": "task_20260321163600_003",
+    "title": "撰写《用太极API 10分钟搭建智能体团队》教程文章",
+    "scene": "brand",
+    "complexity": "simple",
+    "team": [
+      8,
+      4
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T16:38:00.854424",
+    "flow_index": 0
+  },
+  "task_20260321190700_001": {
+    "task_id": "task_20260321190700_001",
+    "title": "【营销客服】发布太极API周末夜最后冲刺推广（今晚19:00-23:00限时4小时），朋友圈+技术社群，早鸟价¥499",
+    "scene": "brand",
+    "complexity": "standard",
+    "team": [
+      8,
+      5,
+      4
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T19:08:34.046517",
+    "priority": "CRITICAL",
+    "source": "Power.md Week 1 - 获得首个付费用户"
+  },
+  "task_20260321190700_002": {
+    "task_id": "task_20260321190700_002",
+    "title": "【技术团队】快速部署太极API在线体验环境，让用户无需安装即可试用九宫协作",
+    "scene": "code",
+    "complexity": "complex",
+    "team": [
+      3,
+      5,
+      7
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T19:08:34.046537",
+    "priority": "HIGH",
+    "source": "Power.md Week 1 - 降低试用门槛"
+  },
+  "task_20260321190700_003": {
+    "task_id": "task_20260321190700_003",
+    "title": "【数据采集】抓取AI开发者社群热门话题，作为推广文案精准投放依据",
+    "scene": "scrape",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T19:08:34.046540",
+    "priority": "HIGH",
+    "source": "Power.md Week 1 - 精准投放"
+  },
+  "task_20260321235700_001": {
+    "task_id": "task_20260321235700_001",
+    "title": "Week 1复盘报告最终版",
+    "scene": "analysis",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T23:58:54.818533",
+    "flow_index": 0
+  },
+  "task_20260321235700_002": {
+    "task_id": "task_20260321235700_002",
+    "title": "知识付费课程首节录制",
+    "scene": "content",
+    "complexity": "standard",
+    "team": [
+      2,
+      5,
+      8
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T23:58:54.819478",
+    "flow_index": 0
+  },
+  "task_20260321235700_003": {
+    "task_id": "task_20260321235700_003",
+    "title": "周日早安推送文案",
+    "scene": "marketing",
+    "complexity": "standard",
+    "team": [
+      1,
+      5,
+      9
+    ],
+    "status": "created",
+    "created_at": "2026-03-21T23:58:54.820493",
+    "flow_index": 0
+  }
+}
